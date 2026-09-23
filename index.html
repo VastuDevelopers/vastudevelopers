@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vastu Developers | Civil Engineering & Construction</title>
+  <meta name="description" content="Vastu Developers provides quality civil engineering, residential construction, renovation, interior design, planning, and complete project support in Solapur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --orange:#E67E22;
+      --orange-deep:#C85C1D;
+      --orange-soft:#F7C98B;
+      --orange-light:#FDF0E2;
+      --cream:#F9F3EC;
+      --white:#FFFFFF;
+      --text:#1F1F1F;
+      --muted:#5C5C5C;
+      --line:rgba(31,31,31,0.10);
+      --shadow:0 20px 50px rgba(198,92,29,0.12);
+      --radius:22px;
+      --container:1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body{
+      margin:0;
+      font-family:"Poppins", sans-serif;
+      background:var(--white);
+      color:var(--text);
+      line-height:1.7;
+    }
+    img { display:block; max-width:100%; }
+    a { text-decoration:none; color:inherit; }
+    ul { margin:0; padding:0; list-style:none; }
+    .container{
+      width:min(var(--container), calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    .topbar{
+      background:linear-gradient(90deg, var(--orange-deep), var(--orange));
+      color:var(--white);
+      font-size:0.82rem;
+      padding:10px 0;
+    }
+
+    .topbar-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .topbar .left,
+    .topbar .right{
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .dot{
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      display:inline-block;
+      background:var(--white);
+      opacity:0.9;
+      margin-right:8px;
+      vertical-align:middle;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      height:86px;
+      gap:18px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:240px;
+      color:var(--text);
+      font-weight:700;
+    }
+
+    .logo img{
+      width:70px;
+      height:70px;
+      object-fit:contain;
+      border-radius:12px;
+      background:transparent;
+    }
+
+    .logo-text{
+      font-size:0.92rem;
+      line-height:1.2;
+      letter-spacing:0.01em;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:28px;
+      color:var(--text);
+      font-weight:500;
+    }
+
+    .menu a{
+      position:relative;
+      transition:0.25s ease;
+    }
+
+    .menu a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-7px;
+      width:0;
+      height:2px;
+      background:var(--orange);
+      transition:0.25s ease;
+    }
+
+    .menu a:hover::after,
+    .menu a:focus-visible::after{
+      width:100%;
+    }
+
+    .nav-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 22px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-weight:700;
+      letter-spacing:0.02em;
+      transition:0.2s ease;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg, var(--orange), var(--orange-deep));
+      color:var(--white);
+      box-shadow:0 12px 28px rgba(198,92,29,0.25);
+    }
+
+    .btn-secondary{
+      background:transparent;
+      border-color:rgba(31,31,31,0.12);
+      color:var(--text);
+    }
+
+    .mobile-toggle{
+      display:none;
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+    }
+
+    .mobile-toggle span{
+      width:22px;
+      height:2px;
+      background:var(--text);
+      display:block;
+      position:relative;
+    }
+
+    .mobile-toggle span::before,
+    .mobile-toggle span::after{
+      content:"";
+      position:absolute;
+      left:0;
+      width:22px;
+      height:2px;
+      background:var(--text);
+    }
+
+    .mobile-toggle span::before{ top:-7px; }
+    .mobile-toggle span::after{ top:7px; }
+
+    .hero{
+      position:relative;
+      background:
+        linear-gradient(90deg, rgba(31,31,31,0.76) 0%, rgba(31,31,31,0.52) 40%, rgba(31,31,31,0.30) 100%),
+        url("https://drive.google.com/uc?export=view&id=1dw2Q6Flpzx-WHdWUCVbijFAVtCQAkyj-") center/cover no-repeat;
+      min-height:690px;
+      display:flex;
+      align-items:center;
+      color:var(--white);
+    }
+
+    .hero .container{
+      position:relative;
+      z-index:1;
+      padding:90px 0;
+    }
+
+    .hero-inner{
+      max-width:700px;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:10px 16px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.18);
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-size:0.76rem;
+      margin-bottom:18px;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(2.5rem, 5vw, 4.7rem);
+      line-height:1.04;
+      letter-spacing:-0.04em;
+      font-weight:800;
+    }
+
+    .hero p{
+      margin:18px 0 30px;
+      font-size:1.08rem;
+      color:rgba(255,255,255,0.9);
+      max-width:620px;
+    }
+
+    .hero-actions{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .hero-meta{
+      display:flex;
+      align-items:center;
+      gap:26px;
+      flex-wrap:wrap;
+      margin-top:35px;
+    }
+
+    .meta-box{
+      min-width:150px;
+    }
+
+    .meta-box strong{
+      display:block;
+      font-size:2rem;
+      color:var(--white);
+      line-height:1.1;
+    }
+
+    .meta-box span{
+      color:rgba(255,255,255,0.82);
+      font-size:0.85rem;
+    }
+
+    .section{
+      padding:95px 0;
+    }
+
+    .section-head{
+      text-align:center;
+      margin-bottom:48px;
+    }
+
+    .section-kicker{
+      display:inline-block;
+      color:var(--orange-deep);
+      font-weight:700;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-size:0.76rem;
+      margin-bottom:12px;
+    }
+
+    h2{
+      margin:0;
+      font-size:clamp(2rem, 4vw, 2.9rem);
+      line-height:1.18;
+      color:var(--text);
+      letter-spacing:-0.04em;
+    }
+
+    .section-sub{
+      max-width:700px;
+      margin:16px auto 0;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    .about-wrap{
+      display:grid;
+      grid-template-columns:1.1fr 0.9fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .about-image{
+      position:relative;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:var(--cream);
+    }
+
+    .about-image img{
+      width:100%;
+      height:560px;
+      object-fit:cover;
+    }
+
+    .about-badge{
+      position:absolute;
+      left:18px;
+      bottom:18px;
+      background:rgba(31,31,31,0.86);
+      color:var(--white);
+      padding:14px 18px;
+      border-radius:14px;
+      backdrop-filter:blur(6px);
+    }
+
+    .about-badge strong{
+      display:block;
+      font-size:1.2rem;
+      margin-bottom:2px;
+    }
+
+    .about-content p{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    .check-list{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:12px 18px;
+      margin-top:22px;
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .check-item{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .check-item::before{
+      content:"✓";
+      width:26px;
+      height:26px;
+      border-radius:50%;
+      background:rgba(230,126,34,0.12);
+      color:var(--orange-deep);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:0.9rem;
+    }
+
+    .services{
+      background:linear-gradient(180deg, var(--cream) 0%, #fffdfb 100%);
+    }
+
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:24px;
+    }
+
+    .service-card{
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:26px 22px;
+      box-shadow:0 10px 32px rgba(31,31,31,0.04);
+      transition:0.25s ease;
+    }
+
+    .service-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 18px 36px rgba(198,92,29,0.09);
+      border-color:rgba(230,126,34,0.26);
+    }
+
+    .icon{
+      width:56px;
+      height:56px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg, rgba(230,126,34,0.12), rgba(230,126,34,0.04));
+      color:var(--orange-deep);
+      font-size:1.7rem;
+      margin-bottom:18px;
+    }
+
+    .service-card h3{
+      margin:0 0 10px;
+      color:var(--text);
+      font-size:1.12rem;
+    }
+
+    .service-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .stats{
+      background:linear-gradient(135deg, #1d1d1d, #2c261f);
+      color:var(--white);
+      padding:56px 0;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:18px;
+    }
+
+    .stat{
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:20px;
+      padding:30px 16px;
+      background:rgba(255,255,255,0.02);
+    }
+
+    .stat strong{
+      display:block;
+      font-size:2.15rem;
+      margin-bottom:6px;
+      color:var(--orange-soft);
+    }
+
+    .stat span{
+      color:rgba(255,255,255,0.8);
+      font-size:0.9rem;
+    }
+
+    .project-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:24px;
+      margin-top:30px;
+    }
+
+    .project-card{
+      border-radius:20px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:var(--white);
+      box-shadow:0 16px 36px rgba(31,31,31,0.05);
+    }
+
+    .project-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .project-content{
+      padding:22px 20px 24px;
+    }
+
+    .project-content h3{
+      margin:0 0 8px;
+      color:var(--text);
+      font-size:1.15rem;
+    }
+
+    .project-content p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.92rem;
+    }
+
+    .why-wrap{
+      display:grid;
+      grid-template-columns:0.95fr 1.05fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .feature-card{
+      background:var(--cream);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 18px 40px rgba(31,31,31,0.04);
+    }
+
+    .feature-list{
+      display:grid;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .feature-item{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+      padding-bottom:14px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .feature-item:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .feature-ico{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      background:rgba(230,126,34,0.12);
+      display:grid;
+      place-items:center;
+      color:var(--orange-deep);
+      font-weight:700;
+      flex-shrink:0;
+    }
+
+    .feature-item h4{
+      margin:0 0 4px;
+      font-size:1.05rem;
+      color:var(--text);
+    }
+
+    .feature-item p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.92rem;
+    }
+
+    .experience-box{
+      background:linear-gradient(180deg, #1f1f1f, #2c261f);
+      border-radius:24px;
+      padding:28px;
+      color:var(--white);
+      box-shadow:var(--shadow);
+    }
+
+    .experience-box p{
+      color:rgba(255,255,255,0.82);
+    }
+
+    .contact-wrap{
+      display:grid;
+      grid-template-columns:1fr 1.1fr;
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .contact-card{
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 16px 40px rgba(31,31,31,0.04);
+    }
+
+    .contact-list{
+      display:grid;
+      gap:18px;
+      margin-top:12px;
+    }
+
+    .contact-item{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      color:var(--text);
+    }
+
+    .contact-icon{
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:rgba(230,126,34,0.12);
+      color:var(--orange-deep);
+      font-weight:700;
+      flex-shrink:0;
+    }
+
+    .contact-item strong{
+      display:block;
+      color:var(--text);
+      margin-bottom:4px;
+      font-size:1rem;
+    }
+
+    .contact-item span,
+    .contact-item a{
+      color:var(--muted);
+      font-size:0.94rem;
+    }
+
+    form{
+      display:grid;
+      gap:14px;
+    }
+
+    .field{
+      display:grid;
+      gap:8px;
+    }
+
+    label{
+      font-weight:600;
+      color:var(--text);
+      font-size:0.92rem;
+    }
+
+    input, textarea{
+      width:100%;
+      border:1px solid rgba(31,31,31,0.12);
+      border-radius:12px;
+      padding:14px 15px;
+      font:inherit;
+      background:#fff;
+      color:var(--text);
+      resize:vertical;
+      min-height:48px;
+    }
+
+    input:focus, textarea:focus{
+      outline:none;
+      border-color:rgba(230,126,34,0.65);
+      box-shadow:0 0 0 4px rgba(230,126,34,0.12);
+    }
+
+    .footer{
+      background:linear-gradient(135deg, #1f1f1f, #2d2b28);
+      color:rgba(255,255,255,0.8);
+      padding:24px 0 36px;
+    }
+
+    .footer-inner{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+
+    .socials{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      border:1px solid rgba(255,255,255,0.12);
+      display:grid;
+      place-items:center;
+      background:rgba(255,255,255,0.03);
+      color:var(--white);
+      font-weight:700;
+    }
+
+    @media (max-width: 980px){
+      .menu{
+        position:absolute;
+        top:86px;
+        left:16px;
+        right:16px;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:18px;
+        box-shadow:0 18px 40px rgba(31,31,31,0.08);
+        padding:16px;
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .menu.show{
+        display:flex;
+      }
+
+      .mobile-toggle{
+        display:flex;
+      }
+
+      .nav-actions .btn-secondary{
+        display:none;
+      }
+
+      .service-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+
+      .project-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+
+      .about-wrap,
+      .why-wrap,
+      .contact-wrap{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 640px){
+      .topbar{
+        display:none;
+      }
+
+      .hero{
+        min-height:560px;
+      }
+
+      .hero-meta{
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+
+      .service-grid,
+      .stats-grid,
+      .project-grid{
+        grid-template-columns:1fr;
+      }
+
+      .check-list{
+        grid-template-columns:1fr;
+      }
+
+      .nav{
+        height:76px;
+      }
+
+      .logo{
+        min-width:0;
+      }
+
+      .logo img{
+        width:54px;
+        height:54px;
+      }
+
+      .logo-text{
+        font-size:0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <span><span class="dot"></span> Trusted Civil Engineering & Construction</span>
+      </div>
+      <div class="right">
+        <span>📍 Tembhurni, Solapur</span>
+        <span>📞 9623264545</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Vastu Developers home">
+        <img src="https://drive.google.com/uc?export=view&id=1ou34zdBIMKmIlneiRPp6wXKFw5DSGY-A" alt="Vastu Developers Logo">
+        <div class="logo-text">
+          <div>Vastu Developers</div>
+        </div>
+      </a>
+
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="#contact">Get Quote</a>
+        <a class="btn btn-primary" href="tel:+919623264545">Call Now</a>
+        <button class="mobile-toggle" aria-label="Toggle menu" id="menuToggle">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="eyebrow">Quality. Trust. Structure.</div>
+          <h1>Building Strong Homes & Beautiful Spaces</h1>
+          <p>
+            Vastu Developers is a trusted civil engineering and construction company in Solapur,
+            offering residential and commercial construction, renovation, interiors, planning,
+            elevation design, and complete project supervision with personal attention.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+919623264545">Call Now</a>
+            <a class="btn btn-secondary" href="https://wa.me/919623264545" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-box">
+              <strong>180+</strong>
+              <span>Projects Delivered</span>
+            </div>
+            <div class="meta-box">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="meta-box">
+              <strong>100%</strong>
+              <span>Client Focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="about-image">
+            <img src="https://drive.google.com/uc?export=view&id=1BZ9uDRrAw5jwczwE9ejOs8EE4dx01mPz" alt="Founder and team of Vastu Developers">
+            <div class="about-badge">
+              <strong>Kiran Gajanan Navale</strong>
+              <span>Civil Engineer</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-kicker">About Us</div>
+            <h2>Trusted Civil Engineering & Construction Experts</h2>
+
+            <p>
+              Vastu Developers is led by Kiran Gajanan Navale, a civil engineer known for his
+              technical knowledge, quality workmanship, and unwavering focus on strong structures.
+              With more than 180 successful projects, the company has earned trust through
+              dependable work and personal attention to every construction requirement.
+            </p>
+
+            <p>
+              From building plans and RCC design to renovation, interiors, plumbing, electrical
+              work, and finishing, Vastu Developers supports clients from planning to project completion.
+            </p>
+
+            <div class="check-list">
+              <div class="check-item">Strong structure</div>
+              <div class="check-item">Quality workmanship</div>
+              <div class="check-item">Supervision</div>
+              <div class="check-item">Affordable solutions</div>
+              <div class="check-item">Timely delivery</div>
+              <div class="check-item">Bank loan support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Our Services</div>
+          <h2>High-Quality Construction & Design Solutions</h2>
+          <p class="section-sub">
+            We provide complete support for planning, design, execution, and finishing of residential and commercial spaces.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Building Plans</h3>
+            <p>All types of residential and commercial building plans crafted for functionality and durability.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏗️</div>
+            <h3>RCC Design</h3>
+            <p>Strong structural design and engineering guidance for safe, long-lasting construction.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🛠️</div>
+            <h3>Renovation Work</h3>
+            <p>Modern upgrades, transformations, and remodeling for homes and commercial spaces.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>Interior & Finishing</h3>
+            <p>Interior design support, POP, wallpaper, painting, furniture, and aesthetic finishing.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">💧</div>
+            <h3>Waterproofing</h3>
+            <p>Reliable waterproofing solutions to protect your structure from moisture and damage.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">⚡</div>
+            <h3>Electrical Work</h3>
+            <p>Safe and efficient electrical installation and maintenance with proper planning.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🚿</div>
+            <h3>Plumbing</h3>
+            <p>Full plumbing services for homes, offices, and construction projects with proper systems.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Elevation & 3D Planning</h3>
+            <p>Modern elevation design and 3D plans to match your vision and architectural style.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <strong>180+</strong>
+            <span>Projects Completed</span>
+          </div>
+          <div class="stat">
+            <strong>5+</strong>
+            <span>Years of Experience</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Client Focus</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Support & Enquiry</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Project Highlights</div>
+          <h2>Our Work Speaks for Itself</h2>
+          <p class="section-sub">
+            Every project is planned with attention to strength, design, value, and customer satisfaction.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="https://drive.google.com/uc?export=view&id=1dw2Q6Flpzx-WHdWUCVbijFAVtCQAkyj-" alt="Construction site project">
+            <div class="project-content">
+              <h3>Residential Construction</h3>
+              <p>Modern home construction with durable structure and detailed finishing.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://drive.google.com/uc?export=view&id=1BZ9uDRrAw5jwczwE9ejOs8EE4dx01mPz" alt="Project team">
+            <div class="project-content">
+              <h3>Design & Supervision</h3>
+              <p>Professional project supervision for quality control and smooth execution.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://drive.google.com/uc?export=view&id=107XNWDEKneiWZkjC9g3F4HbtEj4EinwE" alt="Office and construction location">
+            <div class="project-content">
+              <h3>Office & Site Support</h3>
+              <p>Client-focused construction assistance with planning and on-ground execution.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="why-wrap">
+          <div class="feature-card">
+            <div class="section-kicker">Why Choose Us</div>
+            <h2>Professionalism, Quality, and Commitment</h2>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-ico">01</div>
+                <div>
+                  <h4>Experienced Civil Engineer</h4>
+                  <p>Technical expertise and problem-solving ability for safe, effective construction.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-ico">02</div>
+                <div>
+                  <h4>Strong Structural Focus</h4>
+                  <p>Every construction detail is planned to ensure durability and long-term strength.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-ico">03</div>
+                <div>
+                  <h4>Personal Attention</h4>
+                  <p>We work closely with clients to understand their exact needs and vision.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-ico">04</div>
+                <div>
+                  <h4>Transparent Support</h4>
+                  <p>Honest guidance from planning to completion, ensuring better decisions and smoother execution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-box">
+            <div class="section-kicker" style="color:var(--orange-soft);">Our Vision</div>
+            <h2 style="color:var(--white);">Creating Durable & Beautiful Spaces</h2>
+            <p>
+              In Solapur and especially Tembhurni, Vastu Developers believes in better roads,
+              improved connectivity, and stronger infrastructure for future growth. The goal is
+              to build space that is not only visually appealing but also structurally reliable and valuable.
+            </p>
+
+            <p>
+              We also embrace modern tools and technology to create smarter plans, efficient project execution,
+              and better outcomes for our clients.
+            </p>
+
+            <a class="btn btn-primary" href="#contact" style="margin-top:16px;">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Contact Us</div>
+          <h2>Let’s Build Your Dream Space</h2>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+919623264545">9623264545</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:vastudevelopers45@gmail.com">vastudevelopers45@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <span>
+                    Tembhurni-Karmala Bypass,<br>
+                    Post: Tembhurni, Taluka: Madha,<br>
+                    District: Solapur – 413211
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div>
+                  <strong>Social Media</strong>
+                  <div class="socials" style="margin-top:8px;">
+                    <a href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL" target="_blank" rel="noreferrer">f</a>
+                    <a href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">◎</a>
+                    <a href="https://youtube.com/@VastuDevelopers" target="_blank" rel="noreferrer">▶</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <form action="#" method="post">
+              <div class="field">
+                <label for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Enter your name" />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="Enter your phone number" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" />
+              </div>
+
+              <div class="field">
+                <label for="message">Project Details</label>
+                <textarea id="message" rows="5" placeholder="Tell us about your construction or renovation requirement"></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Vastu Developers. All rights reserved.</div>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL" target="_blank" rel="noreferrer">f</a>
+        <a href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">◎</a>
+        <a href="https://youtube.com/@VastuDevelopers" target="_blank" rel="noreferrer">▶</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => menu.classList.remove('show'));
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you! Your enquiry has been submitted. Please use the phone number or WhatsApp to connect immediately.');
+    });
+  </script>
+</body>
+</html>
