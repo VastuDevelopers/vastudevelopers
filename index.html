@@ -1,1509 +1,1581 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-content="Vastu Developers - Design, Plan and Build. Building plans, RCC design, construction, renovation and interior services in Tembhurni, Madha, Solapur.">
-
-<title>Vastu Developers | Design • Plan • Build</title>
-
-<style>
-:root{
-    --orange:#ef7d16;
-    --dark:#1d1d1d;
-    --muted:#666;
-    --light:#f7f7f7;
-    --border:#e7e7e7;
-}
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:var(--dark);
-    line-height:1.6;
-    background:#fff;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-.container{
-    width:min(1150px,92%);
-    margin:auto;
-}
-
-/* HEADER */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:100;
-    background:#fff;
-    border-bottom:1px solid #eee;
-}
-
-.nav{
-    min-height:78px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.brand img{
-    width:185px;
-    height:auto;
-}
-
-nav{
-    display:flex;
-    gap:25px;
-    font-size:14px;
-    font-weight:700;
-}
-
-nav a:hover{
-    color:var(--orange);
-}
-
-.btn{
-    display:inline-block;
-    background:var(--orange);
-    color:white;
-    padding:12px 20px;
-    border-radius:7px;
-    font-weight:700;
-    border:2px solid var(--orange);
-    transition:.2s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn.outline{
-    background:white;
-    color:var(--orange);
-}
-
-/* HERO */
-
-.hero{
-    padding:75px 0;
-    background:linear-gradient(135deg,#fff 55%,#fff7ef);
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.kicker{
-    color:var(--orange);
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:13px;
-}
-
-h1{
-    font-size:clamp(42px,6vw,70px);
-    line-height:1.05;
-    margin:12px 0 20px;
-}
-
-h1 span{
-    color:var(--orange);
-}
-
-.hero p{
-    font-size:18px;
-    color:var(--muted);
-}
-
-.actions{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:28px;
-}
-
-.hero-image{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 15px 45px #00000018;
-}
-
-.hero-image img{
-    width:100%;
-    height:430px;
-    object-fit:cover;
-}
-
-.hero-caption{
-    padding:17px 20px;
-    font-weight:700;
-}
-
-/* SECTIONS */
-
-section{
-    padding:75px 0;
-}
-
-.section-head{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 42px;
-}
-
-.section-head h2{
-    font-size:38px;
-    margin-bottom:10px;
-}
-
-.section-head p{
-    color:var(--muted);
-}
-
-.alt{
-    background:var(--light);
-}
-
-/* ABOUT */
-
-.about{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:45px;
-    align-items:center;
-}
-
-.about-text h2{
-    font-size:40px;
-    margin:8px 0 15px;
-}
-
-.about-text>p{
-    color:var(--muted);
-}
-
-.points{
-    display:grid;
-    gap:13px;
-    margin-top:22px;
-}
-
-.point{
-    padding:14px 16px;
-    background:white;
-    border-left:4px solid var(--orange);
-    border-radius:5px;
-    box-shadow:0 4px 15px #00000008;
-}
-
-.founder-card{
-    border:1px solid var(--border);
-    border-radius:16px;
-    overflow:hidden;
-    background:white;
-    box-shadow:0 10px 35px #0000000c;
-}
-
-.founder-card img{
-    width:100%;
-    height:330px;
-    object-fit:cover;
-}
-
-.founder-info{
-    padding:24px;
-}
-
-.founder-info h3{
-    font-size:24px;
-}
-
-/* SERVICES */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.services{
-    grid-template-columns:repeat(4,1fr);
-}
-
-.card{
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:24px;
-    background:white;
-    transition:.25s;
-}
-
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 30px #0000000c;
-}
-
-.card h3{
-    margin:10px 0 6px;
-}
-
-.card p{
-    color:var(--muted);
-    font-size:14px;
-}
-
-.icon{
-    font-size:29px;
-}
-
-/* PROJECTS */
-
-.project-card{
-    border-radius:15px;
-    overflow:hidden;
-    background:white;
-    border:1px solid var(--border);
-    transition:.25s;
-}
-
-.project-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 30px #00000012;
-}
-
-.project-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.project-info{
-    padding:20px;
-}
-
-.project-info h3{
-    margin-bottom:5px;
-}
-
-.project-info p{
-    color:var(--muted);
-    font-size:14px;
-}
-
-/* GALLERY */
-
-.gallery-title{
-    margin-top:55px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.gallery-item{
-    height:280px;
-    overflow:hidden;
-    border-radius:15px;
-    background:#eee;
-}
-
-.gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.4s;
-}
-
-.gallery-item:hover img{
-    transform:scale(1.05);
-}
-
-/* OFFICE */
-
-.office{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.office-image{
-    border-radius:16px;
-    overflow:hidden;
-}
-
-.office-image img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-}
-
-.office-text h2{
-    font-size:38px;
-    margin:8px 0 15px;
-}
-
-.office-text p{
-    color:var(--muted);
-    margin-bottom:18px;
-}
-
-/* SOCIAL */
-
-.social-section{
-    text-align:center;
-}
-
-.social-buttons{
-    display:flex;
-    justify-content:center;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:28px;
-}
-
-.social{
-    padding:13px 24px;
-    border-radius:8px;
-    font-weight:700;
-    border:1px solid var(--border);
-    background:white;
-    transition:.2s;
-}
-
-.social:hover{
-    transform:translateY(-3px);
-    border-color:var(--orange);
-    color:var(--orange);
-}
-
-/* CONTACT */
-
-.contact{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
-}
-
-.contact-box{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:15px;
-    padding:28px;
-}
-
-.contact-box h3{
-    font-size:24px;
-    margin-bottom:10px;
-}
-
-.contact-row{
-    padding:13px 0;
-    border-bottom:1px solid #eee;
-}
-
-.contact-row:last-child{
-    border:0;
-}
-
-.contact-row a{
-    color:var(--orange);
-    font-weight:700;
-}
-
-.map-button{
-    margin-top:20px;
-}
-
-/* FOOTER */
-
-footer{
-    background:#181818;
-    color:white;
-    padding:40px 0;
-}
-
-.footer-grid{
-    display:flex;
-    justify-content:space-between;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.footer-brand{
-    font-size:22px;
-    font-weight:800;
-}
-
-.footer-brand span{
-    color:var(--orange);
-}
-
-footer p{
-    color:#bbb;
-    font-size:14px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25d366;
-    color:white;
-    border-radius:50%;
-    width:58px;
-    height:58px;
-    display:grid;
-    place-items:center;
-    font-size:27px;
-    z-index:200;
-    box-shadow:0 5px 20px #0003;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-    nav{
-        display:none;
-    }
-
-    .hero-grid,
-    .about,
-    .office,
-    .contact{
-        grid-template-columns:1fr;
-    }
-
-    .services{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-@media(max-width:600px){
-
-    section{
-        padding:55px 0;
-    }
-
-    .nav{
-        min-height:68px;
-    }
-
-    .brand img{
-        width:150px;
-    }
-
-    .nav>.btn{
-        padding:9px 13px;
-        font-size:13px;
-    }
-
-    h1{
-        font-size:43px;
-    }
-
-    .hero{
-        padding:55px 0;
-    }
-
-    .hero-image img{
-        height:250px;
-    }
-
-    .services,
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-item{
-        height:250px;
-    }
-
-    .founder-card img{
-        height:280px;
-    }
-
-    .office-image img{
-        height:280px;
-    }
-
-    .section-head h2{
-        font-size:30px;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vastu Developers | Civil Construction & Interior Design</title>
+
+    <meta name="description"
+          content="Vastu Developers - Civil construction, building plans, RCC design, renovation, interior design, waterproofing, electrical, plumbing and complete construction solutions.">
+
+    <meta name="keywords"
+          content="Vastu Developers, civil engineer Tembhurni, construction Tembhurni, building construction Solapur, interior design Tembhurni, RCC design, house construction">
+
+    <meta name="author" content="Vastu Developers">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        :root {
+            --orange: #f47b20;
+            --dark-orange: #dd6410;
+            --black: #222222;
+            --light: #f8f8f8;
+            --border: #e6e6e6;
+            --gray: #666666;
+            --white: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            display: block;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: auto;
+            height: 58px;
+            max-width: 180px;
+            object-fit: contain;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .nav-button {
+            background: var(--orange);
+            color: white !important;
+            padding: 9px 16px;
+            border-radius: 7px;
+        }
+
+        .nav-button:hover {
+            background: var(--dark-orange);
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            padding: 70px 20px;
+            background: #fff;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            line-height: 1.15;
+            margin-bottom: 18px;
+            color: var(--black);
+        }
+
+        .hero-content h1 span {
+            color: var(--orange);
+        }
+
+        .hero-content p {
+            color: var(--gray);
+            font-size: 18px;
+            margin-bottom: 28px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            border: 1px solid var(--orange);
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-orange);
+        }
+
+        .btn-secondary {
+            color: var(--orange);
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: #fff5ed;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+            border-radius: 14px;
+        }
+
+        /* =========================
+           COMMON SECTION
+        ========================== */
+
+        section {
+            padding: 75px 20px;
+        }
+
+        .section-light {
+            background: var(--light);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: var(--black);
+        }
+
+        .section-heading h2 span {
+            color: var(--orange);
+        }
+
+        .section-heading p {
+            max-width: 700px;
+            margin: auto;
+            color: var(--gray);
+        }
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .founder-card {
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .founder-card img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .founder-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .founder-info h3 {
+            margin-bottom: 5px;
+        }
+
+        .founder-info p {
+            color: var(--orange);
+            font-weight: 600;
+        }
+
+        .about-content h3 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: var(--orange);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange);
+        }
+
+        .service-number {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #fff1e7;
+            color: var(--orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* =========================
+           IMAGE PROJECT GRID
+        ========================== */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .project-card img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .project-info {
+            padding: 18px;
+        }
+
+        .project-info h3 {
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+
+        .project-info p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* =========================
+           THREE COLUMN PROJECTS
+        ========================== */
+
+        .three-column {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .three-column .project-card img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        /* =========================
+           OFFICE
+        ========================== */
+
+        .office-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .office-image img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+            border-radius: 14px;
+        }
+
+        .office-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .office-content p {
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+
+        .office-details {
+            margin-top: 20px;
+        }
+
+        .office-details div {
+            margin-bottom: 10px;
+        }
+
+        .office-details strong {
+            color: var(--black);
+        }
+
+        /* =========================
+           SOCIAL
+        ========================== */
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .social-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange);
+        }
+
+        .social-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .social-card p {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-box {
+            background: #fff7f1;
+            border: 1px solid #f6d9c3;
+            border-radius: 18px;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .contact-box p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #181818;
+            color: white;
+            padding: 45px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-logo img {
+            width: auto;
+            height: 55px;
+            max-width: 180px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 15px;
+            color: var(--orange);
+        }
+
+        .footer-column p {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 35px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* =========================
+           FLOATING BUTTONS
+        ========================== */
+
+        .floating-buttons {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+        }
+
+        .call-btn {
+            background: #222;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero-container,
+            .about-grid,
+            .office-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .services-grid,
+            .three-column {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .nav-container {
+                padding: 10px 15px;
+            }
+
+            .logo img {
+                height: 48px;
+                max-width: 145px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 50px 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 55px 15px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .services-grid,
+            .projects-grid,
+            .three-column,
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 30px 20px;
+            }
+
+            .contact-box h2 {
+                font-size: 27px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .floating-buttons {
+                right: 12px;
+                bottom: 12px;
+            }
+        }
+
+    </style>
 </head>
-
 
 <body>
 
-
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================== -->
 
 <header>
 
-<div class="container nav">
+    <div class="nav-container">
 
-<a class="brand" href="#">
-<img src="images/logo.PNG" alt="Vastu Developers Logo">
-</a>
+        <a href="#home" class="logo">
+            <img src="images/logo.PNG" alt="Vastu Developers Logo">
+        </a>
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#interiors">Interiors</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#interiors">Interiors</a>
+            <a href="#contact" class="nav-button">Contact</a>
+        </nav>
 
-<a class="btn" href="tel:+919623264545">
-Call Now
-</a>
-
-</div>
+    </div>
 
 </header>
 
 
-<main>
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <h1>
+                Building Your
+                <span>Dreams</span>
+                With Precision
+            </h1>
+
+            <p>
+                Vastu Developers provides complete civil construction,
+                building planning, RCC design, renovation and interior
+                design solutions with professional supervision.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:+919623264545"
+                   class="btn btn-primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/919623264545"
+                   target="_blank"
+                   class="btn btn-secondary">
+                    WhatsApp
+                </a>
+
+                <a href="#projects"
+                   class="btn btn-secondary">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
 
 
-<!-- HERO -->
+        <div class="hero-image">
 
-<section class="hero">
+            <img src="images/hero.PNG"
+                 alt="Vastu Developers Construction Project">
 
-<div class="container hero-grid">
+        </div>
 
-<div>
-
-<div class="kicker">
-Design • Plan • Build
-</div>
-
-<h1>
-Your Dream Home.
-<br>
-<span>Built With Trust.</span>
-</h1>
-
-<p>
-Professional building planning, construction, RCC design,
-renovation and interior services by Vastu Developers.
-</p>
-
-<div class="actions">
-
-<a class="btn"
-href="https://wa.me/919623264545?text=Hello%20Vastu%20Developers,%20I%20would%20like%20to%20discuss%20a%20project.">
-WhatsApp Us
-</a>
-
-<a class="btn outline" href="#contact">
-Get in Touch
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-image">
-
-<img src="images/hero.PNG"
-alt="Vastu Developers Project">
-
-<div class="hero-caption">
-Quality Construction • Professional Planning • Personal Attention
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================== -->
 
 <section id="about">
 
-<div class="container about">
+    <div class="section-container">
 
-<div class="about-text">
+        <div class="section-heading">
 
-<div class="kicker">
-About Vastu Developers
-</div>
+            <h2>About <span>Vastu Developers</span></h2>
 
-<h2>
-Building Spaces For Better Living.
-</h2>
+            <p>
+                Professional construction and design solutions
+                focused on quality, planning and customer satisfaction.
+            </p>
 
-<p>
-Vastu Developers provides end-to-end construction and design support,
-from building plans and 3D elevations to construction, renovation,
-interior and finishing work.
-</p>
-
-<div class="points">
-
-<div class="point">
-✓ Personal attention to every project
-</div>
-
-<div class="point">
-✓ Experienced engineers and skilled team
-</div>
-
-<div class="point">
-✓ Quality-focused construction and finishing
-</div>
-
-<div class="point">
-✓ Support from planning to completion
-</div>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="founder-card">
+        <div class="about-grid">
 
-<img src="images/founder.jpg"
-alt="Kiran Gajanan Navale - Civil Engineer">
+            <div class="founder-card">
 
-<div class="founder-info">
+                <img src="images/founder.jpg"
+                     alt="Kiran Gajanan Navale">
 
-<h3>
-Kiran Gajanan Navale
-</h3>
+                <div class="founder-info">
 
-<p>
-<b>Civil Engineer</b>
-</p>
+                    <h3>Kiran Gajanan Navale</h3>
 
-<p style="margin-top:12px">
+                    <p>Civil Engineer</p>
 
-Tembhurni-Karmala Bypass,
-<br>
-Post: Tembhurni, Taluka: Madha,
-<br>
-District: Solapur – 413211
+                </div>
 
-</p>
+            </div>
 
-<a class="btn"
-style="margin-top:18px"
-href="tel:+919623264545">
 
-9623264545
+            <div class="about-content">
 
-</a>
+                <h3>Complete Construction Solutions</h3>
 
-</div>
+                <p>
+                    Vastu Developers provides complete solutions
+                    for residential and commercial construction,
+                    from planning and structural design to execution
+                    and finishing.
+                </p>
 
-</div>
+                <p>
+                    Our approach focuses on strong structures,
+                    practical planning, quality workmanship and
+                    professional supervision.
+                </p>
 
-</div>
+                <ul class="about-list">
+
+                    <li>Professional Civil Engineering</li>
+                    <li>Strong & Practical Construction</li>
+                    <li>Personal Attention</li>
+                    <li>Complete Project Supervision</li>
+                    <li>Modern Interior Solutions</li>
+                    <li>Quality Finishing Work</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================== -->
 
-<section id="services" class="alt">
+<section class="section-light" id="services">
 
-<div class="container">
+    <div class="section-container">
 
-<div class="section-head">
+        <div class="section-heading">
 
-<div class="kicker">
-What We Do
-</div>
+            <h2>Our <span>Services</span></h2>
 
-<h2>
-Our Services
-</h2>
+            <p>
+                Complete construction, engineering and interior
+                services under one roof.
+            </p>
 
-<p>
-Complete solutions for residential and building projects.
-</p>
-
-</div>
+        </div>
 
 
-<div class="grid services">
+        <div class="services-grid">
 
-<div class="card">
-<div class="icon">📐</div>
-<h3>Building Plans</h3>
-<p>All types of building plans and planning support.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>Building Plans</h3>
+                <p>All types of building plans as per project requirements.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🏗️</div>
-<h3>RCC Design</h3>
-<p>Structural and RCC design support.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>RCC Design</h3>
+                <p>Professional RCC structural design and planning.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🏠</div>
-<h3>Construction</h3>
-<p>Quality building construction and supervision.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Construction</h3>
+                <p>Strong and quality construction with expert supervision.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🖼️</div>
-<h3>3D Elevation</h3>
-<p>Modern 3D elevation and exterior concepts.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>Renovation</h3>
+                <p>Renovation solutions for residential and commercial spaces.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🔨</div>
-<h3>Renovation</h3>
-<p>Renovation and improvement work.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Interior Design</h3>
+                <p>Modern interior design and complete finishing solutions.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🛋️</div>
-<h3>Interior Design</h3>
-<p>Interior designers team and finishing solutions.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>Waterproofing</h3>
+                <p>Professional waterproofing solutions for long-term protection.</p>
+            </div>
 
-<div class="card">
-<div class="icon">💧</div>
-<h3>Waterproofing</h3>
-<p>Waterproofing, plumbing and maintenance.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">07</div>
+                <h3>3D Elevation Plans</h3>
+                <p>Modern 3D exterior elevation planning and visualization.</p>
+            </div>
 
-<div class="card">
-<div class="icon">⚡</div>
-<h3>Electrical & POP</h3>
-<p>Electrical, POP, wallpaper and related work.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">08</div>
+                <h3>Electrical & Plumbing</h3>
+                <p>Electrical and plumbing work as part of complete construction.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🎨</div>
-<h3>Painting</h3>
-<p>Interior and exterior painting work.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">09</div>
+                <h3>Painting</h3>
+                <p>Professional interior and exterior painting solutions.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🪟</div>
-<h3>Sliding Windows</h3>
-<p>Supply and installation support.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">10</div>
+                <h3>POP & Wallpaper</h3>
+                <p>Decorative POP, wallpaper and finishing solutions.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🪑</div>
-<h3>Furniture</h3>
-<p>Furniture and interior finishing solutions.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">11</div>
+                <h3>Furniture</h3>
+                <p>Furniture solutions designed according to your space.</p>
+            </div>
 
-<div class="card">
-<div class="icon">🤝</div>
-<h3>Other Support</h3>
-<p>Material supply, labour services and bank-loan assistance.</p>
-</div>
+            <div class="service-card">
+                <div class="service-number">12</div>
+                <h3>Material Supply</h3>
+                <p>Construction material supply and project support.</p>
+            </div>
 
-</div>
+            <div class="service-card">
+                <div class="service-number">13</div>
+                <h3>Sliding Windows</h3>
+                <p>Modern sliding window solutions for residential projects.</p>
+            </div>
 
-</div>
+            <div class="service-card">
+                <div class="service-number">14</div>
+                <h3>Bank Loan Assistance</h3>
+                <p>Assistance and guidance for construction-related bank loans.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">15</div>
+                <h3>Labour Services</h3>
+                <p>Experienced labour support for construction projects.</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- 3D PROJECTS -->
+<!-- =========================
+     3D PROJECTS
+========================== -->
 
 <section id="projects">
 
-<div class="container">
+    <div class="section-container">
 
-<div class="section-head">
+        <div class="section-heading">
 
-<div class="kicker">
-3D Designs
-</div>
+            <h2>3D <span>Projects</span></h2>
 
-<h2>
-3D Project Designs
-</h2>
+            <p>
+                Selected exterior elevation and architectural
+                visualization projects.
+            </p>
 
-<p>
-Explore our residential exterior and elevation concepts.
-</p>
-
-</div>
+        </div>
 
 
-<div class="grid">
+        <div class="three-column">
 
-<div class="project-card">
-<img src="images/3D%20Project%201.JPG"
-alt="3D Project 1">
-<div class="project-info">
-<h3>3D Project 1</h3>
-<p>Residential exterior design</p>
-</div>
-</div>
+            <div class="project-card">
 
+                <img src="images/3D%20Project%201.JPG"
+                     alt="3D Project 1">
 
-<div class="project-card">
-<img src="images/3D%20Project%202.JPG"
-alt="3D Project 2">
-<div class="project-info">
-<h3>3D Project 2</h3>
-<p>Modern house elevation</p>
-</div>
-</div>
+                <div class="project-info">
+                    <h3>3D Project 01</h3>
+                    <p>Exterior elevation design</p>
+                </div>
+
+            </div>
 
 
-<div class="project-card">
-<img src="images/3D%20Project%203.JPG"
-alt="3D Project 3">
-<div class="project-info">
-<h3>3D Project 3</h3>
-<p>Contemporary home design</p>
-</div>
-</div>
+            <div class="project-card">
+
+                <img src="images/3D%20Project%202.JPG"
+                     alt="3D Project 2">
+
+                <div class="project-info">
+                    <h3>3D Project 02</h3>
+                    <p>Modern exterior design</p>
+                </div>
+
+            </div>
 
 
-<div class="project-card">
-<img src="images/3D%20Project%204.JPG"
-alt="3D Project 4">
-<div class="project-info">
-<h3>3D Project 4</h3>
-<p>Modern residential elevation</p>
-</div>
-</div>
+            <div class="project-card">
+
+                <img src="images/3D%20Project%203.JPG"
+                     alt="3D Project 3">
+
+                <div class="project-info">
+                    <h3>3D Project 03</h3>
+                    <p>Residential elevation</p>
+                </div>
+
+            </div>
 
 
-<div class="project-card">
-<img src="images/3D%20Project%205.JPG"
-alt="3D Project 5">
-<div class="project-info">
-<h3>3D Project 5</h3>
-<p>Architectural exterior design</p>
-</div>
-</div>
+            <div class="project-card">
+
+                <img src="images/3D%20Project%204.JPG"
+                     alt="3D Project 4">
+
+                <div class="project-info">
+                    <h3>3D Project 04</h3>
+                    <p>Contemporary elevation</p>
+                </div>
+
+            </div>
 
 
-<div class="project-card">
-<img src="images/3D%20Project%206.JPG"
-alt="3D Project 6">
-<div class="project-info">
-<h3>3D Project 6</h3>
-<p>Premium house elevation</p>
-</div>
-</div>
+            <div class="project-card">
 
-</div>
+                <img src="images/3D%20Project%205.JPG"
+                     alt="3D Project 5">
 
-</div>
+                <div class="project-info">
+                    <h3>3D Project 05</h3>
+                    <p>Architectural visualization</p>
+                </div>
 
-</section>
+            </div>
 
 
-<!-- INTERIOR PROJECTS -->
+            <div class="project-card">
 
-<section id="interiors" class="alt">
+                <img src="images/3D%20Project%206.JPG"
+                     alt="3D Project 6">
 
-<div class="container">
+                <div class="project-info">
+                    <h3>3D Project 06</h3>
+                    <p>Modern house elevation</p>
+                </div>
 
-<div class="section-head">
+            </div>
 
-<div class="kicker">
-Interior Design
-</div>
+        </div>
 
-<h2>
-Interior Projects
-</h2>
-
-<p>
-Modern interiors designed with functionality, comfort and style.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<div class="project-card">
-
-<img src="images/Interior%20Project%201.JPG"
-alt="Interior Project 1">
-
-<div class="project-info">
-<h3>Interior Project 1</h3>
-<p>Modern interior design</p>
-</div>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/Interior%20Project%202.JPG"
-alt="Interior Project 2">
-
-<div class="project-info">
-<h3>Interior Project 2</h3>
-<p>Elegant home interior</p>
-</div>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/Interior%20Project%203.JPG"
-alt="Interior Project 3">
-
-<div class="project-info">
-<h3>Interior Project 3</h3>
-<p>Contemporary interior</p>
-</div>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/Interior%20Project%204.JPG"
-alt="Interior Project 4">
-
-<div class="project-info">
-<h3>Interior Project 4</h3>
-<p>Premium interior design</p>
-</div>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/Interior%20Project%205.JPG"
-alt="Interior Project 5">
-
-<div class="project-info">
-<h3>Interior Project 5</h3>
-<p>Functional and stylish interior</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- OTHER PROJECTS -->
+<!-- =========================
+     INTERIOR PROJECTS
+========================== -->
+
+<section class="section-light" id="interiors">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <h2>Interior <span>Projects</span></h2>
+
+            <p>
+                Modern interior concepts and finishing work.
+            </p>
+
+        </div>
+
+
+        <div class="three-column">
+
+            <div class="project-card">
+
+                <img src="images/Interior%20Project%201.JPG"
+                     alt="Interior Project 1">
+
+                <div class="project-info">
+                    <h3>Interior Project 01</h3>
+                    <p>Modern interior design</p>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="images/Interior%20Project%202.JPG"
+                     alt="Interior Project 2">
+
+                <div class="project-info">
+                    <h3>Interior Project 02</h3>
+                    <p>Residential interior</p>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="images/Interior%20Project%203.JPG"
+                     alt="Interior Project 3">
+
+                <div class="project-info">
+                    <h3>Interior Project 03</h3>
+                    <p>Contemporary interiors</p>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="images/Interior%20Project%204.JPG"
+                     alt="Interior Project 4">
+
+                <div class="project-info">
+                    <h3>Interior Project 04</h3>
+                    <p>Elegant interior design</p>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="images/Interior%20Project%205.JPG"
+                     alt="Interior Project 5">
+
+                <div class="project-info">
+                    <h3>Interior Project 05</h3>
+                    <p>Complete interior solution</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OTHER PROJECTS
+========================== -->
 
 <section>
 
-<div class="container">
+    <div class="section-container">
 
-<div class="section-head">
+        <div class="section-heading">
 
-<div class="kicker">
-Completed Work
-</div>
+            <h2>Completed <span>Work</span></h2>
 
-<h2>
-Our Projects
-</h2>
+            <p>
+                Selected project photographs from Vastu Developers.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="grid">
+        <div class="projects-grid">
 
-<div class="project-card">
+            <div class="project-card">
 
-<img src="images/project-1.JPEG"
-alt="Vastu Developers Project 1">
+                <img src="images/project-1.JPEG"
+                     alt="Vastu Developers Project 1">
 
-<div class="project-info">
-<h3>Residential Project</h3>
-<p>Quality residential construction.</p>
-</div>
+                <div class="project-info">
+                    <h3>Completed Project 01</h3>
+                    <p>Construction work</p>
+                </div>
 
-</div>
-
-
-<div class="project-card">
-
-<img src="images/project-2.JPEG"
-alt="Vastu Developers Project 2">
-
-<div class="project-info">
-<h3>Modern Home</h3>
-<p>Contemporary residential design.</p>
-</div>
-
-</div>
+            </div>
 
 
-<div class="project-card">
+            <div class="project-card">
 
-<img src="images/hero.PNG"
-alt="Vastu Developers Featured Project">
+                <img src="images/project-2.JPEG"
+                     alt="Vastu Developers Project 2">
 
-<div class="project-info">
-<h3>Featured Project</h3>
-<p>Professional planning and construction.</p>
-</div>
+                <div class="project-info">
+                    <h3>Completed Project 02</h3>
+                    <p>Construction work</p>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
 
-<!-- OFFICE -->
+<!-- =========================
+     OFFICE
+========================== -->
+
+<section class="section-light">
+
+    <div class="section-container">
+
+        <div class="office-grid">
+
+            <div class="office-image">
+
+                <img src="images/office.jpg"
+                     alt="Vastu Developers Office">
+
+            </div>
+
+
+            <div class="office-content">
+
+                <h3>Visit Our Office</h3>
+
+                <p>
+                    Connect with Vastu Developers for your
+                    construction, planning and interior requirements.
+                </p>
+
+                <div class="office-details">
+
+                    <div>
+                        <strong>Vastu Developers</strong>
+                    </div>
+
+                    <div>
+                        Kiran Gajanan Navale – Civil Engineer
+                    </div>
+
+                    <div>
+                        Tembhurni-Karmala Bypass
+                    </div>
+
+                    <div>
+                        Post: Tembhurni, Taluka: Madha
+                    </div>
+
+                    <div>
+                        District: Solapur – 413211
+                    </div>
+
+                    <div>
+                        Phone:
+                        <a href="tel:+919623264545">
+                            9623264545
+                        </a>
+                    </div>
+
+                    <div>
+                        Email:
+                        <a href="mailto:vastudevelopers45@gmail.com">
+                            vastudevelopers45@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <a href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
+                   target="_blank"
+                   class="btn btn-primary">
+                    Open Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SOCIAL MEDIA
+========================== -->
 
 <section>
 
-<div class="container office">
+    <div class="section-container">
 
-<div class="office-image">
+        <div class="section-heading">
 
-<img src="images/office.jpg"
-alt="Vastu Developers Office">
+            <h2>Follow <span>Us</span></h2>
 
-</div>
+            <p>
+                Follow Vastu Developers for construction,
+                interior and project updates.
+            </p>
 
-
-<div class="office-text">
-
-<div class="kicker">
-Visit Us
-</div>
-
-<h2>
-Vastu Developers
-</h2>
-
-<p>
-For building plans, construction, renovation, interiors,
-3D elevation designs and project consultation,
-get in touch with our team.
-</p>
-
-<p>
-
-<b>Location:</b><br>
-
-Tembhurni-Karmala Bypass,
-<br>
-Post: Tembhurni, Taluka: Madha,
-<br>
-District: Solapur – 413211
-
-</p>
-
-<a class="btn"
-href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
-target="_blank">
-
-📍 Open Google Maps
-
-</a>
-
-</div>
-
-</div>
-
-</section>
+        </div>
 
 
-<!-- GALLERY -->
+        <div class="social-grid">
 
-<section id="gallery" class="alt">
+            <div class="social-card">
 
-<div class="container">
+                <h3>Facebook</h3>
 
-<div class="section-head">
+                <p>
+                    Follow our Facebook page for updates and projects.
+                </p>
 
-<div class="kicker">
-Our Gallery
-</div>
+                <a href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL"
+                   target="_blank"
+                   class="btn btn-secondary">
+                    Visit Facebook
+                </a>
 
-<h2>
-Project Gallery
-</h2>
-
-<p>
-Explore Vastu Developers projects, interiors and designs.
-</p>
-
-</div>
+            </div>
 
 
-<div class="gallery">
+            <div class="social-card">
 
-<div class="gallery-item">
-<img src="images/hero.PNG" alt="Featured Project">
-</div>
+                <h3>Instagram</h3>
 
-<div class="gallery-item">
-<img src="images/3D%20Project%201.JPG" alt="3D Project 1">
-</div>
+                <p>
+                    Explore our latest construction and design work.
+                </p>
 
-<div class="gallery-item">
-<img src="images/3D%20Project%202.JPG" alt="3D Project 2">
-</div>
+                <a href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y="
+                   target="_blank"
+                   class="btn btn-secondary">
+                    Visit Instagram
+                </a>
 
-<div class="gallery-item">
-<img src="images/3D%20Project%203.JPG" alt="3D Project 3">
-</div>
+            </div>
 
-<div class="gallery-item">
-<img src="images/3D%20Project%204.JPG" alt="3D Project 4">
-</div>
 
-<div class="gallery-item">
-<img src="images/3D%20Project%205.JPG" alt="3D Project 5">
-</div>
+            <div class="social-card">
 
-<div class="gallery-item">
-<img src="images/3D%20Project%206.JPG" alt="3D Project 6">
-</div>
+                <h3>YouTube</h3>
 
-<div class="gallery-item">
-<img src="images/Interior%20Project%201.JPG" alt="Interior Project 1">
-</div>
+                <p>
+                    Watch project videos and construction updates.
+                </p>
 
-<div class="gallery-item">
-<img src="images/Interior%20Project%202.JPG" alt="Interior Project 2">
-</div>
+                <a href="https://youtube.com/@VastuDevelopers"
+                   target="_blank"
+                   class="btn btn-secondary">
+                    Visit YouTube
+                </a>
 
-<div class="gallery-item">
-<img src="images/Interior%20Project%203.JPG" alt="Interior Project 3">
-</div>
+            </div>
 
-<div class="gallery-item">
-<img src="images/Interior%20Project%204.JPG" alt="Interior Project 4">
-</div>
+        </div>
 
-<div class="gallery-item">
-<img src="images/Interior%20Project%205.JPG" alt="Interior Project 5">
-</div>
-
-<div class="gallery-item">
-<img src="images/project-1.JPEG" alt="Completed Project 1">
-</div>
-
-<div class="gallery-item">
-<img src="images/project-2.JPEG" alt="Completed Project 2">
-</div>
-
-<div class="gallery-item">
-<img src="images/office.jpg" alt="Vastu Developers Office">
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- SOCIAL MEDIA -->
+<!-- =========================
+     CONTACT
+========================== -->
 
-<section class="social-section">
+<section id="contact" class="section-light">
 
-<div class="container">
+    <div class="section-container">
 
-<div class="kicker">
-Follow Us
-</div>
+        <div class="contact-box">
 
-<h2 style="font-size:38px;margin-top:8px">
-Vastu Developers Online
-</h2>
+            <h2>Let's Build Your Dream Together</h2>
 
-<p style="color:#666;margin-top:8px">
-Follow our latest projects, designs, construction updates and work.
-</p>
+            <p>
+                Contact Vastu Developers for building plans,
+                construction, RCC design, renovation, interiors
+                and complete project solutions.
+            </p>
 
+            <div class="contact-buttons">
 
-<div class="social-buttons">
+                <a href="tel:+919623264545"
+                   class="btn btn-primary">
+                    Call 9623264545
+                </a>
 
-<a class="social"
-href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL"
-target="_blank">
-🔵 Facebook
-</a>
+                <a href="https://wa.me/919623264545"
+                   target="_blank"
+                   class="btn btn-secondary">
+                    WhatsApp Us
+                </a>
 
+                <a href="mailto:vastudevelopers45@gmail.com"
+                   class="btn btn-secondary">
+                    Email Us
+                </a>
 
-<a class="social"
-href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y="
-target="_blank">
-📸 Instagram
-</a>
+            </div>
 
+        </div>
 
-<a class="social"
-href="https://youtube.com/@VastuDevelopers"
-target="_blank">
-▶️ YouTube
-</a>
-
-
-<a class="social"
-href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
-target="_blank">
-📍 Google Maps
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- CONTACT -->
-
-<section id="contact" class="alt">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="kicker">
-Let's Build
-</div>
-
-<h2>
-Contact Vastu Developers
-</h2>
-
-<p>
-Tell us about your next construction or interior project.
-</p>
-
-</div>
-
-
-<div class="contact">
-
-
-<div class="contact-box">
-
-<h3>
-Contact Details
-</h3>
-
-
-<div class="contact-row">
-
-👷 <b>Kiran Gajanan Navale</b>
-<br>
-Civil Engineer
-
-</div>
-
-
-<div class="contact-row">
-
-📞
-<a href="tel:+919623264545">
-9623264545
-</a>
-
-</div>
-
-
-<div class="contact-row">
-
-✉️
-<a href="mailto:vastudevelopers45@gmail.com">
-vastudevelopers45@gmail.com
-</a>
-
-</div>
-
-
-<div class="contact-row">
-
-📍
-
-Tembhurni-Karmala Bypass,
-<br>
-Post: Tembhurni, Taluka: Madha,
-<br>
-District: Solapur – 413211
-
-</div>
-
-
-<a class="btn"
-style="margin-top:18px"
-href="tel:+919623264545">
-
-📞 Call Now
-
-</a>
-
-</div>
-
-
-<div class="contact-box">
-
-<h3>
-Start Your Project
-</h3>
-
-<p style="color:#666;margin:10px 0 20px">
-
-For plans, construction, renovation,
-interiors or 3D elevation designs,
-contact us directly.
-
-</p>
-
-
-<a class="btn"
-href="https://wa.me/919623264545?text=Hello%20Vastu%20Developers,%20I%20want%20to%20discuss%20a%20new%20project."
-target="_blank">
-
-💬 WhatsApp
-
-</a>
-
-
-<a class="btn outline"
-style="margin-left:8px"
-href="mailto:vastudevelopers45@gmail.com">
-
-✉️ Email
-
-</a>
-
-
-<div style="margin-top:25px">
-
-<a class="btn outline"
-href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
-target="_blank">
-
-📍 Get Directions
-
-</a>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-</main>
-
-
-<!-- WHATSAPP -->
-
-<a
-class="whatsapp"
-href="https://wa.me/919623264545?text=Hello%20Vastu%20Developers"
-target="_blank"
-aria-label="WhatsApp">
-
-💬
-
-</a>
-
-
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
-<div class="container footer-grid">
-
-<div>
-
-<div class="footer-brand">
-Vastu <span>Developers</span>
-</div>
-
-<p>
-Design • Plan • Build
-</p>
-
-</div>
+    <div class="footer-container">
 
 
-<div>
+        <div class="footer-column">
 
-<p>
-© 2026 Vastu Developers
-</p>
+            <div class="footer-logo">
 
-<p>
-Kiran Gajanan Navale – Civil Engineer
-</p>
+                <img src="images/logo.PNG"
+                     alt="Vastu Developers Logo">
 
-</div>
+            </div>
 
-</div>
+            <p>
+                Professional civil construction,
+                engineering and interior design solutions.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#interiors">Interiors</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                Tembhurni-Karmala Bypass
+            </p>
+
+            <p>
+                Post: Tembhurni, Taluka: Madha
+            </p>
+
+            <p>
+                District: Solapur – 413211
+            </p>
+
+            <p>
+                <a href="tel:+919623264545">
+                    9623264545
+                </a>
+            </p>
+
+            <p>
+                <a href="mailto:vastudevelopers45@gmail.com">
+                    vastudevelopers45@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Vastu Developers. All Rights Reserved.
+
+    </div>
 
 </footer>
+
+
+<!-- =========================
+     FLOATING BUTTONS
+========================== -->
+
+<div class="floating-buttons">
+
+    <a href="tel:+919623264545"
+       class="floating-btn call-btn"
+       aria-label="Call Vastu Developers">
+        ☎
+    </a>
+
+    <a href="https://wa.me/919623264545"
+       target="_blank"
+       class="floating-btn whatsapp-btn"
+       aria-label="WhatsApp Vastu Developers">
+        W
+    </a>
+
+</div>
 
 
 </body>
