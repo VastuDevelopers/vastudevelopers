@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vastu Developers | Civil Construction & Interior Design</title>
+    <title>Vastu Developers | Construction, 3D Exterior, Interior & Building Materials</title>
 
     <meta name="description"
-          content="Vastu Developers - Civil construction, building plans, RCC design, renovation, interior design, waterproofing, electrical, plumbing and complete construction solutions.">
+        content="Vastu Developers - Civil construction, 3D exterior design, interior design, Gujarat tiles, plumbing materials and complete building material supply in Tembhurni, Madha, Solapur.">
 
     <meta name="keywords"
-          content="Vastu Developers, civil engineer Tembhurni, construction Tembhurni, building construction Solapur, interior design Tembhurni, RCC design, house construction">
+        content="Vastu Developers, construction Tembhurni, civil engineer Tembhurni, 3D exterior design, interior design, Gujarat tiles, plumbing material, sand, bricks, glass, cement, building material supply">
 
     <meta name="author" content="Vastu Developers">
+
 
     <style>
 
@@ -52,6 +56,7 @@
             display: block;
         }
 
+
         /* =========================
            HEADER
         ========================== */
@@ -69,9 +74,11 @@
             max-width: 1200px;
             margin: auto;
             padding: 12px 20px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             gap: 20px;
         }
 
@@ -90,7 +97,7 @@
         nav {
             display: flex;
             align-items: center;
-            gap: 22px;
+            gap: 20px;
         }
 
         nav a {
@@ -98,6 +105,7 @@
             font-weight: 600;
             color: var(--black);
             transition: 0.3s;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -115,6 +123,7 @@
             background: var(--dark-orange);
         }
 
+
         /* =========================
            HERO
         ========================== */
@@ -127,8 +136,10 @@
         .hero-container {
             max-width: 1200px;
             margin: auto;
+
             display: grid;
             grid-template-columns: 1fr 1fr;
+
             align-items: center;
             gap: 50px;
         }
@@ -161,10 +172,15 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+
             padding: 12px 20px;
+
             border-radius: 8px;
+
             font-weight: 700;
+
             border: 1px solid var(--orange);
+
             transition: 0.3s;
         }
 
@@ -197,6 +213,7 @@
             margin: auto;
             border-radius: 14px;
         }
+
 
         /* =========================
            COMMON SECTION
@@ -231,10 +248,11 @@
         }
 
         .section-heading p {
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
             color: var(--gray);
         }
+
 
         /* =========================
            ABOUT
@@ -302,6 +320,7 @@
             margin-right: 10px;
         }
 
+
         /* =========================
            SERVICES
         ========================== */
@@ -328,13 +347,18 @@
         .service-number {
             width: 38px;
             height: 38px;
+
             border-radius: 50%;
+
             background: #fff1e7;
             color: var(--orange);
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             font-weight: bold;
+
             margin-bottom: 15px;
         }
 
@@ -348,8 +372,55 @@
             font-size: 14px;
         }
 
+
         /* =========================
-           IMAGE PROJECT GRID
+           CATEGORY CARDS
+        ========================== */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .category-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px 22px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--orange);
+        }
+
+        .category-icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .category-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .category-card p {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .category-card .btn {
+            font-size: 13px;
+            padding: 9px 14px;
+        }
+
+
+        /* =========================
+           PROJECT IMAGE CARDS
         ========================== */
 
         .projects-grid {
@@ -386,6 +457,7 @@
             font-size: 14px;
         }
 
+
         /* =========================
            THREE COLUMN PROJECTS
         ========================== */
@@ -402,6 +474,54 @@
             max-width: 100%;
             margin: auto;
         }
+
+
+        /* =========================
+           MATERIAL SUPPLY
+        ========================== */
+
+        .material-intro {
+            max-width: 850px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: var(--gray);
+        }
+
+        .material-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .material-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .material-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange);
+        }
+
+        .material-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .material-card h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .material-card p {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
 
         /* =========================
            OFFICE
@@ -444,6 +564,7 @@
             color: var(--black);
         }
 
+
         /* =========================
            SOCIAL
         ========================== */
@@ -478,6 +599,7 @@
             margin-bottom: 15px;
         }
 
+
         /* =========================
            CONTACT
         ========================== */
@@ -497,7 +619,7 @@
 
         .contact-box p {
             color: var(--gray);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 25px;
         }
 
@@ -507,6 +629,7 @@
             gap: 12px;
             flex-wrap: wrap;
         }
+
 
         /* =========================
            FOOTER
@@ -521,8 +644,10 @@
         .footer-container {
             max-width: 1200px;
             margin: auto;
+
             display: grid;
             grid-template-columns: 1.2fr 1fr 1fr;
+
             gap: 40px;
         }
 
@@ -530,10 +655,12 @@
             width: auto;
             height: 55px;
             max-width: 180px;
-            object-fit: contain;
+
             margin-bottom: 15px;
+
             background: white;
             padding: 5px;
+
             border-radius: 6px;
         }
 
@@ -568,12 +695,18 @@
         .copyright {
             max-width: 1200px;
             margin: 35px auto 0;
+
             padding-top: 20px;
+
             border-top: 1px solid #333;
+
             text-align: center;
+
             color: #999;
+
             font-size: 13px;
         }
+
 
         /* =========================
            FLOATING BUTTONS
@@ -581,24 +714,34 @@
 
         .floating-buttons {
             position: fixed;
+
             right: 18px;
             bottom: 18px;
+
             z-index: 999;
+
             display: flex;
             flex-direction: column;
+
             gap: 10px;
         }
 
         .floating-btn {
             width: 50px;
             height: 50px;
+
             border-radius: 50%;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             color: white;
+
             font-size: 20px;
+
             font-weight: bold;
+
             box-shadow: 0 5px 15px rgba(0,0,0,0.18);
         }
 
@@ -610,11 +753,12 @@
             background: #25d366;
         }
 
+
         /* =========================
            MOBILE
         ========================== */
 
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
 
             nav {
                 gap: 10px;
@@ -644,14 +788,20 @@
             }
 
             .services-grid,
-            .three-column {
+            .three-column,
+            .category-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .material-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .footer-container {
                 grid-template-columns: 1fr 1fr;
             }
         }
+
 
         @media (max-width: 650px) {
 
@@ -691,6 +841,8 @@
             .services-grid,
             .projects-grid,
             .three-column,
+            .category-grid,
+            .material-grid,
             .social-grid {
                 grid-template-columns: 1fr;
             }
@@ -715,9 +867,12 @@
         }
 
     </style>
+
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
@@ -728,21 +883,37 @@
     <div class="nav-container">
 
         <a href="#home" class="logo">
-            <img src="images/logo.PNG" alt="Vastu Developers Logo">
+
+            <img src="images/logo.PNG"
+                 alt="Vastu Developers Logo">
+
         </a>
 
+
         <nav>
+
             <a href="#home">Home</a>
+
             <a href="#about">About</a>
+
             <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#interiors">Interiors</a>
-            <a href="#contact" class="nav-button">Contact</a>
+
+            <a href="#exterior">3D Exterior</a>
+
+            <a href="#interiors">Interior</a>
+
+            <a href="#materials">Materials</a>
+
+            <a href="#contact" class="nav-button">
+                Contact
+            </a>
+
         </nav>
 
     </div>
 
 </header>
+
 
 
 <!-- =========================
@@ -753,41 +924,57 @@
 
     <div class="hero-container">
 
+
         <div class="hero-content">
 
             <h1>
+
                 Building Your
                 <span>Dreams</span>
                 With Precision
+
             </h1>
 
+
             <p>
+
                 Vastu Developers provides complete civil construction,
-                building planning, RCC design, renovation and interior
-                design solutions with professional supervision.
+                3D exterior design, interior design, building material
+                supply and plumbing material solutions.
+
             </p>
+
 
             <div class="hero-buttons">
 
                 <a href="tel:+919623264545"
                    class="btn btn-primary">
+
                     Call Now
+
                 </a>
+
 
                 <a href="https://wa.me/919623264545"
                    target="_blank"
                    class="btn btn-secondary">
+
                     WhatsApp
+
                 </a>
 
-                <a href="#projects"
+
+                <a href="#services"
                    class="btn btn-secondary">
-                    View Projects
+
+                    Our Services
+
                 </a>
 
             </div>
 
         </div>
+
 
 
         <div class="hero-image">
@@ -802,6 +989,7 @@
 </section>
 
 
+
 <!-- =========================
      ABOUT
 ========================== -->
@@ -810,19 +998,27 @@
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>About <span>Vastu Developers</span></h2>
+            <h2>
+                About <span>Vastu Developers</span>
+            </h2>
 
             <p>
-                Professional construction and design solutions
-                focused on quality, planning and customer satisfaction.
+
+                Professional construction, design and material
+                supply solutions focused on quality and customer
+                satisfaction.
+
             </p>
 
         </div>
 
 
+
         <div class="about-grid">
+
 
             <div class="founder-card">
 
@@ -831,40 +1027,75 @@
 
                 <div class="founder-info">
 
-                    <h3>Kiran Gajanan Navale</h3>
+                    <h3>
+                        Kiran Gajanan Navale
+                    </h3>
 
-                    <p>Civil Engineer</p>
+                    <p>
+                        Civil Engineer
+                    </p>
 
                 </div>
 
             </div>
 
 
+
             <div class="about-content">
 
-                <h3>Complete Construction Solutions</h3>
+                <h3>
+                    Complete Construction Solutions
+                </h3>
+
 
                 <p>
+
                     Vastu Developers provides complete solutions
                     for residential and commercial construction,
-                    from planning and structural design to execution
-                    and finishing.
+                    from planning and structural design to execution,
+                    finishing and material supply.
+
                 </p>
 
+
                 <p>
-                    Our approach focuses on strong structures,
-                    practical planning, quality workmanship and
-                    professional supervision.
+
+                    We also provide 3D exterior design, interior design,
+                    tiles, plumbing materials and building materials
+                    required for construction projects.
+
                 </p>
+
 
                 <ul class="about-list">
 
-                    <li>Professional Civil Engineering</li>
-                    <li>Strong & Practical Construction</li>
-                    <li>Personal Attention</li>
-                    <li>Complete Project Supervision</li>
-                    <li>Modern Interior Solutions</li>
-                    <li>Quality Finishing Work</li>
+                    <li>
+                        Professional Civil Engineering
+                    </li>
+
+                    <li>
+                        3D Exterior Design
+                    </li>
+
+                    <li>
+                        Interior Design
+                    </li>
+
+                    <li>
+                        Strong & Practical Construction
+                    </li>
+
+                    <li>
+                        Building Material Supply
+                    </li>
+
+                    <li>
+                        Personal Attention
+                    </li>
+
+                    <li>
+                        Complete Project Supervision
+                    </li>
 
                 </ul>
 
@@ -877,6 +1108,7 @@
 </section>
 
 
+
 <!-- =========================
      SERVICES
 ========================== -->
@@ -885,109 +1117,296 @@
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>Our <span>Services</span></h2>
+            <h2>
+                Our <span>Services</span>
+            </h2>
 
             <p>
-                Complete construction, engineering and interior
-                services under one roof.
+
+                Complete construction, engineering, design,
+                material supply and finishing services under
+                one roof.
+
             </p>
 
         </div>
 
 
+
         <div class="services-grid">
 
-            <div class="service-card">
-                <div class="service-number">01</div>
-                <h3>Building Plans</h3>
-                <p>All types of building plans as per project requirements.</p>
-            </div>
 
             <div class="service-card">
-                <div class="service-number">02</div>
-                <h3>RCC Design</h3>
-                <p>Professional RCC structural design and planning.</p>
+
+                <div class="service-number">
+                    01
+                </div>
+
+                <h3>
+                    Building Plans
+                </h3>
+
+                <p>
+                    All types of building plans as per project requirements.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">03</div>
-                <h3>Construction</h3>
-                <p>Strong and quality construction with expert supervision.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">04</div>
-                <h3>Renovation</h3>
-                <p>Renovation solutions for residential and commercial spaces.</p>
+
+                <div class="service-number">
+                    02
+                </div>
+
+                <h3>
+                    3D Exterior Design
+                </h3>
+
+                <p>
+                    Modern 3D exterior elevation planning and visualization.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">05</div>
-                <h3>Interior Design</h3>
-                <p>Modern interior design and complete finishing solutions.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">06</div>
-                <h3>Waterproofing</h3>
-                <p>Professional waterproofing solutions for long-term protection.</p>
+
+                <div class="service-number">
+                    03
+                </div>
+
+                <h3>
+                    RCC Design
+                </h3>
+
+                <p>
+                    Professional RCC structural design and planning.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">07</div>
-                <h3>3D Elevation Plans</h3>
-                <p>Modern 3D exterior elevation planning and visualization.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">08</div>
-                <h3>Electrical & Plumbing</h3>
-                <p>Electrical and plumbing work as part of complete construction.</p>
+
+                <div class="service-number">
+                    04
+                </div>
+
+                <h3>
+                    Construction
+                </h3>
+
+                <p>
+                    Strong and quality construction with expert supervision.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">09</div>
-                <h3>Painting</h3>
-                <p>Professional interior and exterior painting solutions.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">10</div>
-                <h3>POP & Wallpaper</h3>
-                <p>Decorative POP, wallpaper and finishing solutions.</p>
+
+                <div class="service-number">
+                    05
+                </div>
+
+                <h3>
+                    Interior Design
+                </h3>
+
+                <p>
+                    Modern interior design and complete finishing solutions.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">11</div>
-                <h3>Furniture</h3>
-                <p>Furniture solutions designed according to your space.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">12</div>
-                <h3>Material Supply</h3>
-                <p>Construction material supply and project support.</p>
+
+                <div class="service-number">
+                    06
+                </div>
+
+                <h3>
+                    Renovation
+                </h3>
+
+                <p>
+                    Renovation solutions for residential and commercial spaces.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">13</div>
-                <h3>Sliding Windows</h3>
-                <p>Modern sliding window solutions for residential projects.</p>
-            </div>
+
 
             <div class="service-card">
-                <div class="service-number">14</div>
-                <h3>Bank Loan Assistance</h3>
-                <p>Assistance and guidance for construction-related bank loans.</p>
+
+                <div class="service-number">
+                    07
+                </div>
+
+                <h3>
+                    Waterproofing
+                </h3>
+
+                <p>
+                    Professional waterproofing solutions for long-term protection.
+                </p>
+
             </div>
 
+
+
             <div class="service-card">
-                <div class="service-number">15</div>
-                <h3>Labour Services</h3>
-                <p>Experienced labour support for construction projects.</p>
+
+                <div class="service-number">
+                    08
+                </div>
+
+                <h3>
+                    Electrical & Plumbing
+                </h3>
+
+                <p>
+                    Electrical and plumbing work for complete construction projects.
+                </p>
+
             </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    09
+                </div>
+
+                <h3>
+                    Painting
+                </h3>
+
+                <p>
+                    Professional interior and exterior painting solutions.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    10
+                </div>
+
+                <h3>
+                    POP & Wallpaper
+                </h3>
+
+                <p>
+                    Decorative POP, wallpaper and finishing solutions.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    11
+                </div>
+
+                <h3>
+                    Furniture
+                </h3>
+
+                <p>
+                    Furniture solutions designed according to your space.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    12
+                </div>
+
+                <h3>
+                    Bank Loan Assistance
+                </h3>
+
+                <p>
+                    Assistance and guidance for construction-related bank loans.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    13
+                </div>
+
+                <h3>
+                    Labour Services
+                </h3>
+
+                <p>
+                    Experienced labour support for construction projects.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    14
+                </div>
+
+                <h3>
+                    Material Supply
+                </h3>
+
+                <p>
+                    Complete building material supply for construction projects.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    15
+                </div>
+
+                <h3>
+                    Gujarat Tiles
+                </h3>
+
+                <p>
+                    Tiles sourced from Gujarat for residential and commercial projects.
+                </p>
+
+            </div>
+
 
         </div>
 
@@ -996,110 +1415,372 @@
 </section>
 
 
+
 <!-- =========================
-     3D PROJECTS
+     BUSINESS CATEGORIES
 ========================== -->
 
-<section id="projects">
+<section id="business">
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>3D <span>Projects</span></h2>
+            <h2>
+                Our <span>Business Categories</span>
+            </h2>
 
             <p>
-                Selected exterior elevation and architectural
-                visualization projects.
+
+                From architectural visualization to interiors and
+                construction materials, we provide complete solutions
+                for your building project.
+
             </p>
 
         </div>
 
 
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    3D Exterior Design
+                </h3>
+
+                <p>
+
+                    Modern exterior elevation concepts and
+                    3D visualization for your dream home.
+
+                </p>
+
+                <a href="#exterior"
+                   class="btn btn-secondary">
+
+                    View Designs
+
+                </a>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🛋️
+                </div>
+
+                <h3>
+                    Interior Design
+                </h3>
+
+                <p>
+
+                    Modern and practical interior design solutions
+                    for residential and commercial spaces.
+
+                </p>
+
+                <a href="#interiors"
+                   class="btn btn-secondary">
+
+                    View Interiors
+
+                </a>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🧱
+                </div>
+
+                <h3>
+                    Building Materials
+                </h3>
+
+                <p>
+
+                    Building materials including sand, bricks,
+                    glass, cement and other construction materials.
+
+                </p>
+
+                <a href="#materials"
+                   class="btn btn-secondary">
+
+                    View Materials
+
+                </a>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🏺
+                </div>
+
+                <h3>
+                    Gujarat Tiles
+                </h3>
+
+                <p>
+
+                    Tiles sourced from Gujarat for your
+                    construction and interior requirements.
+
+                </p>
+
+                <a href="#materials"
+                   class="btn btn-secondary">
+
+                    Enquire Now
+
+                </a>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🚰
+                </div>
+
+                <h3>
+                    Plumbing Materials
+                </h3>
+
+                <p>
+
+                    All types of plumbing materials required
+                    for residential and commercial construction.
+
+                </p>
+
+                <a href="#materials"
+                   class="btn btn-secondary">
+
+                    Enquire Now
+
+                </a>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🚧
+                </div>
+
+                <h3>
+                    Complete Material Supply
+                </h3>
+
+                <p>
+
+                    Material supply support for your complete
+                    construction project.
+
+                </p>
+
+                <a href="#materials"
+                   class="btn btn-secondary">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     3D EXTERIOR PROJECTS
+========================== -->
+
+<section id="exterior">
+
+    <div class="section-container">
+
+
+        <div class="section-heading">
+
+            <h2>
+                3D <span>Exterior Design</span>
+            </h2>
+
+            <p>
+
+                Explore our 3D exterior elevation and
+                architectural visualization work.
+
+            </p>
+
+        </div>
+
+
+
         <div class="three-column">
+
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%201.JPG"
-                     alt="3D Project 1">
+                     alt="3D Exterior Project 1">
 
                 <div class="project-info">
-                    <h3>3D Project 01</h3>
-                    <p>Exterior elevation design</p>
+
+                    <h3>
+                        3D Exterior Project 01
+                    </h3>
+
+                    <p>
+                        Exterior elevation design
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%202.JPG"
-                     alt="3D Project 2">
+                     alt="3D Exterior Project 2">
 
                 <div class="project-info">
-                    <h3>3D Project 02</h3>
-                    <p>Modern exterior design</p>
+
+                    <h3>
+                        3D Exterior Project 02
+                    </h3>
+
+                    <p>
+                        Modern exterior design
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%203.JPG"
-                     alt="3D Project 3">
+                     alt="3D Exterior Project 3">
 
                 <div class="project-info">
-                    <h3>3D Project 03</h3>
-                    <p>Residential elevation</p>
+
+                    <h3>
+                        3D Exterior Project 03
+                    </h3>
+
+                    <p>
+                        Residential elevation
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%204.JPG"
-                     alt="3D Project 4">
+                     alt="3D Exterior Project 4">
 
                 <div class="project-info">
-                    <h3>3D Project 04</h3>
-                    <p>Contemporary elevation</p>
+
+                    <h3>
+                        3D Exterior Project 04
+                    </h3>
+
+                    <p>
+                        Contemporary elevation
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%205.JPG"
-                     alt="3D Project 5">
+                     alt="3D Exterior Project 5">
 
                 <div class="project-info">
-                    <h3>3D Project 05</h3>
-                    <p>Architectural visualization</p>
+
+                    <h3>
+                        3D Exterior Project 05
+                    </h3>
+
+                    <p>
+                        Architectural visualization
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/3D%20Project%206.JPG"
-                     alt="3D Project 6">
+                     alt="3D Exterior Project 6">
 
                 <div class="project-info">
-                    <h3>3D Project 06</h3>
-                    <p>Modern house elevation</p>
+
+                    <h3>
+                        3D Exterior Project 06
+                    </h3>
+
+                    <p>
+                        Modern house elevation
+                    </p>
+
                 </div>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1110,82 +1791,130 @@
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>Interior <span>Projects</span></h2>
+            <h2>
+                <span>Interior Design</span> Projects
+            </h2>
 
             <p>
-                Modern interior concepts and finishing work.
+
+                Modern interior concepts and finishing
+                solutions for your dream space.
+
             </p>
 
         </div>
 
 
+
         <div class="three-column">
+
 
             <div class="project-card">
 
                 <img src="images/Interior%20Project%201.JPG"
-                     alt="Interior Project 1">
+                     alt="Interior Design Project 1">
 
                 <div class="project-info">
-                    <h3>Interior Project 01</h3>
-                    <p>Modern interior design</p>
+
+                    <h3>
+                        Interior Project 01
+                    </h3>
+
+                    <p>
+                        Modern interior design
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/Interior%20Project%202.JPG"
-                     alt="Interior Project 2">
+                     alt="Interior Design Project 2">
 
                 <div class="project-info">
-                    <h3>Interior Project 02</h3>
-                    <p>Residential interior</p>
+
+                    <h3>
+                        Interior Project 02
+                    </h3>
+
+                    <p>
+                        Residential interior
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/Interior%20Project%203.JPG"
-                     alt="Interior Project 3">
+                     alt="Interior Design Project 3">
 
                 <div class="project-info">
-                    <h3>Interior Project 03</h3>
-                    <p>Contemporary interiors</p>
+
+                    <h3>
+                        Interior Project 03
+                    </h3>
+
+                    <p>
+                        Contemporary interiors
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/Interior%20Project%204.JPG"
-                     alt="Interior Project 4">
+                     alt="Interior Design Project 4">
 
                 <div class="project-info">
-                    <h3>Interior Project 04</h3>
-                    <p>Elegant interior design</p>
+
+                    <h3>
+                        Interior Project 04
+                    </h3>
+
+                    <p>
+                        Elegant interior design
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
 
                 <img src="images/Interior%20Project%205.JPG"
-                     alt="Interior Project 5">
+                     alt="Interior Design Project 5">
 
                 <div class="project-info">
-                    <h3>Interior Project 05</h3>
-                    <p>Complete interior solution</p>
+
+                    <h3>
+                        Interior Project 05
+                    </h3>
+
+                    <p>
+                        Complete interior solution
+                    </p>
+
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1194,26 +1923,237 @@
 </section>
 
 
+
 <!-- =========================
-     OTHER PROJECTS
+     MATERIAL SUPPLY
+========================== -->
+
+<section id="materials">
+
+    <div class="section-container">
+
+
+        <div class="section-heading">
+
+            <h2>
+                Building <span>Materials Supply</span>
+            </h2>
+
+            <p>
+
+                Construction materials and plumbing materials
+                for residential and commercial projects.
+
+            </p>
+
+        </div>
+
+
+        <p class="material-intro">
+
+            Vastu Developers also provides material supply support,
+            including tiles sourced from Gujarat and essential
+            construction and plumbing materials.
+
+        </p>
+
+
+
+        <div class="material-grid">
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🏺
+                </div>
+
+                <h3>
+                    Gujarat Tiles
+                </h3>
+
+                <p>
+                    Tiles sourced from Gujarat
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🪨
+                </div>
+
+                <h3>
+                    Sand
+                </h3>
+
+                <p>
+                    Construction sand supply
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🧱
+                </div>
+
+                <h3>
+                    Bricks
+                </h3>
+
+                <p>
+                    Building brick supply
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🪟
+                </div>
+
+                <h3>
+                    Glass
+                </h3>
+
+                <p>
+                    Glass for construction requirements
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🏗️
+                </div>
+
+                <h3>
+                    Cement
+                </h3>
+
+                <p>
+                    Cement for construction projects
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🚰
+                </div>
+
+                <h3>
+                    Plumbing Materials
+                </h3>
+
+                <p>
+                    All types of plumbing materials
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    🪣
+                </div>
+
+                <h3>
+                    Construction Materials
+                </h3>
+
+                <p>
+                    Materials required for construction
+                </p>
+
+            </div>
+
+
+
+            <div class="material-card">
+
+                <div class="material-icon">
+                    📦
+                </div>
+
+                <h3>
+                    Material Supply
+                </h3>
+
+                <p>
+                    Project-wise material supply support
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div style="text-align:center; margin-top:35px;">
+
+            <a href="https://wa.me/919623264545?text=Hello%20Vastu%20Developers%2C%20I%20want%20to%20know%20about%20building%20materials%20and%20prices."
+               target="_blank"
+               class="btn btn-primary">
+
+                Enquire About Materials
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     COMPLETED WORK
 ========================== -->
 
 <section>
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>Completed <span>Work</span></h2>
+            <h2>
+                Completed <span>Work</span>
+            </h2>
 
             <p>
-                Selected project photographs from Vastu Developers.
+
+                Selected project photographs from
+                Vastu Developers.
+
             </p>
 
         </div>
 
 
+
         <div class="projects-grid">
+
 
             <div class="project-card">
 
@@ -1221,11 +2161,19 @@
                      alt="Vastu Developers Project 1">
 
                 <div class="project-info">
-                    <h3>Completed Project 01</h3>
-                    <p>Construction work</p>
+
+                    <h3>
+                        Completed Project 01
+                    </h3>
+
+                    <p>
+                        Construction work
+                    </p>
+
                 </div>
 
             </div>
+
 
 
             <div class="project-card">
@@ -1234,17 +2182,26 @@
                      alt="Vastu Developers Project 2">
 
                 <div class="project-info">
-                    <h3>Completed Project 02</h3>
-                    <p>Construction work</p>
+
+                    <h3>
+                        Completed Project 02
+                    </h3>
+
+                    <p>
+                        Construction work
+                    </p>
+
                 </div>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1255,7 +2212,9 @@
 
     <div class="section-container">
 
+
         <div class="office-grid">
+
 
             <div class="office-image">
 
@@ -1265,19 +2224,29 @@
             </div>
 
 
+
             <div class="office-content">
 
-                <h3>Visit Our Office</h3>
+                <h3>
+                    Visit Our Office
+                </h3>
+
 
                 <p>
+
                     Connect with Vastu Developers for your
-                    construction, planning and interior requirements.
+                    construction, 3D exterior, interior and
+                    material requirements.
+
                 </p>
+
 
                 <div class="office-details">
 
                     <div>
-                        <strong>Vastu Developers</strong>
+                        <strong>
+                            Vastu Developers
+                        </strong>
                     </div>
 
                     <div>
@@ -1297,27 +2266,37 @@
                     </div>
 
                     <div>
+
                         Phone:
+
                         <a href="tel:+919623264545">
                             9623264545
                         </a>
+
                     </div>
 
                     <div>
+
                         Email:
+
                         <a href="mailto:vastudevelopers45@gmail.com">
                             vastudevelopers45@gmail.com
                         </a>
+
                     </div>
 
                 </div>
 
+
                 <br>
+
 
                 <a href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
                    target="_blank"
                    class="btn btn-primary">
+
                     Open Google Maps
+
                 </a>
 
             </div>
@@ -1327,6 +2306,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1337,23 +2317,32 @@
 
     <div class="section-container">
 
+
         <div class="section-heading">
 
-            <h2>Follow <span>Us</span></h2>
+            <h2>
+                Follow <span>Us</span>
+            </h2>
 
             <p>
+
                 Follow Vastu Developers for construction,
-                interior and project updates.
+                interior, exterior and project updates.
+
             </p>
 
         </div>
 
 
+
         <div class="social-grid">
+
 
             <div class="social-card">
 
-                <h3>Facebook</h3>
+                <h3>
+                    Facebook
+                </h3>
 
                 <p>
                     Follow our Facebook page for updates and projects.
@@ -1362,15 +2351,20 @@
                 <a href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL"
                    target="_blank"
                    class="btn btn-secondary">
+
                     Visit Facebook
+
                 </a>
 
             </div>
 
 
+
             <div class="social-card">
 
-                <h3>Instagram</h3>
+                <h3>
+                    Instagram
+                </h3>
 
                 <p>
                     Explore our latest construction and design work.
@@ -1379,15 +2373,20 @@
                 <a href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y="
                    target="_blank"
                    class="btn btn-secondary">
+
                     Visit Instagram
+
                 </a>
 
             </div>
 
 
+
             <div class="social-card">
 
-                <h3>YouTube</h3>
+                <h3>
+                    YouTube
+                </h3>
 
                 <p>
                     Watch project videos and construction updates.
@@ -1396,16 +2395,20 @@
                 <a href="https://youtube.com/@VastuDevelopers"
                    target="_blank"
                    class="btn btn-secondary">
+
                     Visit YouTube
+
                 </a>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1416,33 +2419,51 @@
 
     <div class="section-container">
 
+
         <div class="contact-box">
 
-            <h2>Let's Build Your Dream Together</h2>
+            <h2>
+                Let's Build Your Dream Together
+            </h2>
+
 
             <p>
+
                 Contact Vastu Developers for building plans,
-                construction, RCC design, renovation, interiors
-                and complete project solutions.
+                3D exterior design, interior design, construction,
+                tiles, plumbing materials and complete building
+                material supply.
+
             </p>
+
 
             <div class="contact-buttons">
 
+
                 <a href="tel:+919623264545"
                    class="btn btn-primary">
+
                     Call 9623264545
+
                 </a>
+
 
                 <a href="https://wa.me/919623264545"
                    target="_blank"
                    class="btn btn-secondary">
+
                     WhatsApp Us
+
                 </a>
+
 
                 <a href="mailto:vastudevelopers45@gmail.com"
                    class="btn btn-secondary">
+
                     Email Us
+
                 </a>
+
 
             </div>
 
@@ -1451,6 +2472,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1464,6 +2486,7 @@
 
         <div class="footer-column">
 
+
             <div class="footer-logo">
 
                 <img src="images/logo.PNG"
@@ -1471,42 +2494,68 @@
 
             </div>
 
+
             <p>
+
                 Professional civil construction,
-                engineering and interior design solutions.
+                3D exterior design, interior design
+                and building material supply solutions.
+
             </p>
 
         </div>
 
 
+
         <div class="footer-column">
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
+
 
             <ul class="footer-links">
 
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about">
+                        About
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#services">Services</a>
+                    <a href="#services">
+                        Services
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#exterior">
+                        3D Exterior
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#interiors">Interiors</a>
+                    <a href="#interiors">
+                        Interior Design
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#materials">
+                        Building Materials
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
@@ -1514,9 +2563,13 @@
         </div>
 
 
+
         <div class="footer-column">
 
-            <h3>Contact</h3>
+            <h3>
+                Contact
+            </h3>
+
 
             <p>
                 Tembhurni-Karmala Bypass
@@ -1531,20 +2584,25 @@
             </p>
 
             <p>
+
                 <a href="tel:+919623264545">
                     9623264545
                 </a>
+
             </p>
 
             <p>
+
                 <a href="mailto:vastudevelopers45@gmail.com">
                     vastudevelopers45@gmail.com
                 </a>
+
             </p>
 
         </div>
 
     </div>
+
 
 
     <div class="copyright">
@@ -1556,27 +2614,36 @@
 </footer>
 
 
+
 <!-- =========================
      FLOATING BUTTONS
 ========================== -->
 
 <div class="floating-buttons">
 
+
     <a href="tel:+919623264545"
        class="floating-btn call-btn"
        aria-label="Call Vastu Developers">
+
         ☎
+
     </a>
+
 
     <a href="https://wa.me/919623264545"
        target="_blank"
        class="floating-btn whatsapp-btn"
        aria-label="WhatsApp Vastu Developers">
+
         W
+
     </a>
+
 
 </div>
 
 
 </body>
+
 </html>
