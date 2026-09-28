@@ -1,25 +1,7 @@
-VASTU DEVELOPERS - FREE WEBSITE
+VASTU DEVELOPERS MULTI-PAGE GITHUB PAGES
 
-Files:
-- index.html : complete responsive website
+Replace index.html and add style.css plus these folders: about, services, 3d-exterior, interior-design, tiles, plumbing-materials, building-materials, projects, contact.
 
-FREE PUBLISHING WITH GITHUB PAGES
-1. Create/login to a GitHub account at https://github.com/
-2. Click + -> New repository.
-3. Name it: vastu-developers
-4. Select Public and create the repository.
-5. Upload index.html.
-6. Open Settings -> Pages.
-7. Under Build and deployment, choose "Deploy from a branch".
-8. Select Branch: main, folder: / (root), then Save.
-9. Wait a few minutes. GitHub will show your free website address.
+Keep the existing images/ folder and filenames. Existing 3D and Interior files are intentionally referenced from images/ so you do not need to move them. New category images can be added under images/3d-exterior/, images/interior/, images/tiles/, images/plumbing-materials/, images/building-materials/.
 
-The site already includes:
-- Vastu Developers branding
-- Kiran Gajanan Navale / Civil Engineer
-- phone, address and email
-- WhatsApp and call buttons
-- About, Services, Projects and Contact sections
-- responsive mobile design
-
-To add your real project photos later, replace the placeholder project cards with images.
+All image tags preserve aspect ratio and do not use object-fit:cover.
