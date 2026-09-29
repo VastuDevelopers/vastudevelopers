@@ -1,1 +1,357 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Completed Projects | Vastu Developers</title><link rel="stylesheet" href="../style.css"></head><body><header><div class="container nav"><a href="../index.html"><img class="logo" src="../images/logo.PNG" alt="Vastu Developers logo"></a><nav><a href="../index.html">Home</a><a href="../about/">About</a><a href="../services/">Services</a><a href="../3d-exterior/">3D Exterior</a><a href="../interior-design/">Interior</a><a href="../tiles/">Tiles</a><a href="../plumbing-materials/">Plumbing</a><a href="../building-materials/">Materials</a><a href="../projects/">Projects</a><a href="../contact/">Contact</a></nav></div></header><main><section class="page-hero"><div class="container"><h1>Completed Projects</h1><p>Existing project and office photos.</p></div></section><section><div class="container"><div class="gallery"><figure><img src="../images/project-1.JPEG" alt="Project 1"><figcaption>Project 1</figcaption></figure><figure><img src="../images/project-2.JPEG" alt="Project 2"><figcaption>Project 2</figcaption></figure><figure><img src="../images/office.jpg" alt="Vastu Developers Office"><figcaption>Office</figcaption></figure></div></div></section></main><footer><div class="container footer-grid"><div><img class="logo" src="../images/logo.PNG" alt="Vastu Developers" style="background:#fff;padding:6px;border-radius:6px"><p>Kiran Gajanan Navale – Civil Engineer</p><p>Design • Plan • Build</p></div><div><h3>Quick Links</h3><p><a href="../3d-exterior/">3D Exterior</a></p><p><a href="../interior-design/">Interior Design</a></p><p><a href="../tiles/">Tiles</a></p><p><a href="../plumbing-materials/">Plumbing Materials</a></p></div><div><h3>Contact</h3><p><a href="tel:9623264545">9623264545</a></p><p><a href="mailto:vastudevelopers45@gmail.com">vastudevelopers45@gmail.com</a></p><p>Tembhurni-Karmala Bypass,<br>Post: Tembhurni, Taluka: Madha,<br>District: Solapur – 413211</p></div></div><div class="container small">© 2026 Vastu Developers. All rights reserved.</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Completed Projects | Vastu Developers</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 35px 15px 25px;
+    }
+    .logo {
+      width: 85px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    /* BACK BUTTON */
+    .back {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .back:hover {
+      background: #444;
+    }
+    /* PROJECT GALLERY */
+    .gallery {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns:
+        repeat(3, 1fr);
+      gap: 20px;
+    }
+    /* PROJECT CARD */
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow:
+        0 3px 14px rgba(0,0,0,0.10);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+    }
+    .project-title {
+      text-align: center;
+      padding: 13px 8px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    /* LIGHTBOX */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      inset: 0;
+      background: rgba(0,0,0,0.94);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .lightbox img {
+      max-width: 96%;
+      max-height: 92vh;
+      width: auto;
+      height: auto;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 22px;
+      color: #fff;
+      font-size: 42px;
+      cursor: pointer;
+    }
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #eee;
+      text-align: center;
+      padding: 25px 15px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    /* TABLET */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+    }
+    /* MOBILE */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 27px;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .project-title {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+<img
+  src="../images/logo.PNG"
+  alt="Vastu Developers Logo"
+  class="logo">
+<h1>
+  Completed Projects
+</h1>
+<p class="subtitle">
+  Explore our completed construction projects
+</p>
+<a
+  href="../index.html"
+  class="back">
+  ← Back to Home
+</a>
+  </header>
+  <!-- ALL 16 PROJECT PHOTOS -->
+  <main class="gallery">
+<!-- PROJECT 1 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%201.JPEG"
+    alt="Completed Site 1"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 1
+  </div>
+</div>
+<!-- PROJECT 2 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%202.JPEG"
+    alt="Completed Site 2"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 2
+  </div>
+</div>
+<!-- PROJECT 3 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%203.JPEG"
+    alt="Completed Site 3"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 3
+  </div>
+</div>
+<!-- PROJECT 4 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%204.JPEG"
+    alt="Completed Site 4"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 4
+  </div>
+</div>
+<!-- PROJECT 5 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%205.JPEG"
+    alt="Completed Site 5"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 5
+  </div>
+</div>
+<!-- PROJECT 6 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%206.JPEG"
+    alt="Completed Site 6"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 6
+  </div>
+</div>
+<!-- PROJECT 7 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%207.JPEG"
+    alt="Completed Site 7"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 7
+  </div>
+</div>
+<!-- PROJECT 8 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%208.JPEG"
+    alt="Completed Site 8"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 8
+  </div>
+</div>
+<!-- PROJECT 9 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%209.JPEG"
+    alt="Completed Site 9"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 9
+  </div>
+</div>
+<!-- PROJECT 10 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2010.JPEG"
+    alt="Completed Site 10"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 10
+  </div>
+</div>
+<!-- PROJECT 11 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2011.JPEG"
+    alt="Completed Site 11"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 11
+  </div>
+</div>
+<!-- PROJECT 12 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2012.JPEG"
+    alt="Completed Site 12"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 12
+  </div>
+</div>
+<!-- PROJECT 13 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2013.JPEG"
+    alt="Completed Site 13"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 13
+  </div>
+</div>
+<!-- PROJECT 14 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2014.JPEG"
+    alt="Completed Site 14"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 14
+  </div>
+</div>
+<!-- PROJECT 15 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2015.JPEG"
+    alt="Completed Site 15"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 15
+  </div>
+</div>
+<!-- PROJECT 16 -->
+<div class="project">
+  <img
+    src="../images/projects/Completed%20Site%2016.JPEG"
+    alt="Completed Site 16"
+    onclick="openImage(this.src)">
+  <div class="project-title">
+    Completed Project 16
+  </div>
+</div>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+<strong>
+  Vastu Developers
+</strong>
+<br>
+Kiran Gajanan Navale – Civil Engineer
+<br>
+📞 9623264545
+<br>
+Tembhurni–Karmala Bypass,
+Post Tembhurni, Taluka Madha,
+District Solapur – 413211
+  </footer>
+  <!-- FULL-SCREEN IMAGE VIEWER -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    onclick="closeImage()">
+<span
+  class="close">
+  &times;
+</span>
+<img
+  id="lightboxImage"
+  src=""
+  alt="Completed Project">
+  </div>
+  <script>
+    function openImage(src) {
+      document.getElementById("lightboxImage").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeImage() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
