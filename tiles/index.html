@@ -1,1 +1,902 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tiles | Vastu Developers</title><link rel="stylesheet" href="../style.css"></head><body><header><div class="container nav"><a href="../index.html"><img class="logo" src="../images/logo.PNG" alt="Vastu Developers logo"></a><nav><a href="../index.html">Home</a><a href="../about/">About</a><a href="../services/">Services</a><a href="../3d-exterior/">3D Exterior</a><a href="../interior-design/">Interior</a><a href="../tiles/">Tiles</a><a href="../plumbing-materials/">Plumbing</a><a href="../building-materials/">Materials</a><a href="../projects/">Projects</a><a href="../contact/">Contact</a></nav></div></header><main><section class="page-hero"><div class="container"><h1>Tiles</h1><p>Add tile collections, brands, sizes, finishes, photos and information here.</p></div></section><section><div class="container"><div class="card" style="text-align:center;padding:55px"><div class="icon" style="font-size:55px">◻️</div><h2>Tiles Catalogue</h2><p>This page is ready for future content without making the Home page longer.</p><div class="notice">Recommended image folder: <strong>images/tiles/</strong></div></div></div></section></main><footer><div class="container footer-grid"><div><img class="logo" src="../images/logo.PNG" alt="Vastu Developers" style="background:#fff;padding:6px;border-radius:6px"><p>Kiran Gajanan Navale – Civil Engineer</p><p>Design • Plan • Build</p></div><div><h3>Quick Links</h3><p><a href="../3d-exterior/">3D Exterior</a></p><p><a href="../interior-design/">Interior Design</a></p><p><a href="../tiles/">Tiles</a></p><p><a href="../plumbing-materials/">Plumbing Materials</a></p></div><div><h3>Contact</h3><p><a href="tel:9623264545">9623264545</a></p><p><a href="mailto:vastudevelopers45@gmail.com">vastudevelopers45@gmail.com</a></p><p>Tembhurni-Karmala Bypass,<br>Post: Tembhurni, Taluka: Madha,<br>District: Solapur – 413211</p></div></div><div class="container small">© 2026 Vastu Developers. All rights reserved.</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tiles | Vastu Developers</title>
+
+  <meta name="description"
+        content="Vastu Developers - PGVT, GVT, Double Charge, Full Body Vitrified, Ceramic, Parking, Outdoor and Large Format Slab Tiles.">
+
+  <link rel="stylesheet" href="../style.css">
+
+
+  <style>
+
+    /* ===============================
+       TILE INTRO
+    =============================== */
+
+    .tile-intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+
+    /* ===============================
+       TILE GRID
+    =============================== */
+
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+
+    /* ===============================
+       TILE CARD
+    =============================== */
+
+    .tile-card {
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 16px;
+      padding: 25px;
+
+      display: flex;
+      flex-direction: column;
+
+      transition: 0.25s ease;
+    }
+
+
+    .tile-card:hover {
+      transform: translateY(-5px);
+
+      border-color: #f58220;
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+    }
+
+
+    .tile-number {
+      font-size: 13px;
+      color: #999999;
+      font-weight: 700;
+
+      margin-bottom: 8px;
+    }
+
+
+    .tile-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+
+    .tile-card h2 {
+      font-size: 21px;
+      line-height: 1.35;
+
+      margin: 0 0 6px;
+    }
+
+
+    .tile-marathi {
+      color: #f58220;
+
+      font-weight: 700;
+
+      font-size: 17px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .tile-card p {
+      color: #666666;
+
+      margin: 0 0 12px;
+    }
+
+
+    .tile-card .marathi-description {
+      color: #555555;
+
+      font-size: 15px;
+
+      margin-bottom: 0;
+    }
+
+
+    /* ===============================
+       CTA
+    =============================== */
+
+    .tile-cta {
+      text-align: center;
+
+      background: #fff7f0;
+
+      border-radius: 16px;
+
+      padding: 35px 25px;
+
+      margin-top: 40px;
+    }
+
+
+    /* ===============================
+       RESPONSIVE
+    =============================== */
+
+    @media (max-width: 900px) {
+
+      .tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .tile-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header>
+
+  <div class="container nav">
+
+
+    <a href="../index.html">
+
+      <img
+        src="../images/logo.PNG"
+        alt="Vastu Developers Logo"
+        class="logo">
+
+    </a>
+
+
+    <nav>
+
+      <a href="../index.html">
+        Home
+      </a>
+
+      <a href="../about/">
+        About
+      </a>
+
+      <a href="../services/">
+        Services
+      </a>
+
+      <a href="../3d-exterior/">
+        3D Exterior
+      </a>
+
+      <a href="../interior-design/">
+        Interior
+      </a>
+
+      <a href="../tiles/" class="active">
+        Tiles
+      </a>
+
+      <a href="../plumbing-materials/">
+        Plumbing
+      </a>
+
+      <a href="../building-materials/">
+        Materials
+      </a>
+
+      <a href="../projects/">
+        Projects
+      </a>
+
+      <a href="../contact/">
+        Contact
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HERO
+====================================================== -->
+
+<section class="page-hero">
+
+  <div class="container">
+
+
+    <a
+      href="../index.html"
+      class="back">
+
+      ← Back to Home
+
+    </a>
+
+
+    <h1>
+      Tiles
+    </h1>
+
+
+    <p>
+      टाईल्स
+    </p>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+====================================================== -->
+
+<section>
+
+  <div class="container">
+
+
+    <div class="tile-intro">
+
+
+      <div class="section-head">
+
+        <h2>
+          Tile Products
+        </h2>
+
+        <p>
+          टाईल्सचे प्रकार
+        </p>
+
+      </div>
+
+
+      <p>
+        Explore different types of tiles suitable for
+        homes, commercial spaces, kitchens, bathrooms,
+        parking areas and outdoor applications.
+      </p>
+
+
+      <p>
+        घर, व्यावसायिक जागा, किचन, बाथरूम,
+        पार्किंग आणि बाह्य वापरासाठी योग्य
+        विविध प्रकारच्या टाईल्सची माहिती.
+      </p>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TILE PRODUCTS
+====================================================== -->
+
+<section>
+
+  <div class="container">
+
+
+    <div class="tile-grid">
+
+
+      <!-- =================================================
+           01 PGVT
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          01
+        </div>
+
+
+        <div class="tile-icon">
+          ✨
+        </div>
+
+
+        <h2>
+          PGVT
+        </h2>
+
+
+        <div class="tile-marathi">
+          पीजीव्हीटी
+          (पॉलिश केलेले ग्लेज्ड विटिफाइड टाईल्स)
+        </div>
+
+
+        <p>
+          High-gloss, mirror-like finish with digital
+          marble or stone prints, ideal for living rooms.
+        </p>
+
+
+        <p class="marathi-description">
+          लिव्हिंग रूमसाठी योग्य, डिजिटल मार्बल किंवा
+          स्टोन प्रिंट्ससह उच्च-ग्लॉस, आरशासारखी फिनिश.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           02 GVT
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          02
+        </div>
+
+
+        <div class="tile-icon">
+          🪵
+        </div>
+
+
+        <h2>
+          GVT
+        </h2>
+
+
+        <div class="tile-marathi">
+          जीव्हीटी
+          (ग्लेज्ड विटिफाइड टाईल्स)
+        </div>
+
+
+        <p>
+          Available in matte, rustic, and wooden textures
+          with high durability and slip resistance.
+        </p>
+
+
+        <p class="marathi-description">
+          उच्च टिकाऊपणा आणि घसरण्यापासून संरक्षण देणाऱ्या
+          मॅट, रस्टिक आणि लाकडी टेक्सचरमध्ये उपलब्ध.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           03 DOUBLE CHARGE
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          03
+        </div>
+
+
+        <div class="tile-icon">
+          ◫
+        </div>
+
+
+        <h2>
+          Double Charge Vitrified Tiles
+        </h2>
+
+
+        <div class="tile-marathi">
+          डबल चार्ज विटिफाइड टाईल्स
+        </div>
+
+
+        <p>
+          Heavy-duty, dual-color shaded tiles with a thick
+          pigment layer, perfect for commercial spaces.
+        </p>
+
+
+        <p class="marathi-description">
+          व्यावसायिक जागांसाठी योग्य, जाड पिगमेंट लेयर
+          आणि ड्युअल-कलर शेडेड हेवी-ड्यूटी टाईल्स.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           04 FULL BODY
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          04
+        </div>
+
+
+        <div class="tile-icon">
+          ◼️
+        </div>
+
+
+        <h2>
+          Full Body Vitrified Tiles
+        </h2>
+
+
+        <div class="tile-marathi">
+          फुल बॉडी विटिफाइड टाईल्स
+        </div>
+
+
+        <p>
+          Uniform color and pattern throughout the entire
+          tile thickness, making chips or scratches
+          unnoticeable.
+        </p>
+
+
+        <p class="marathi-description">
+          संपूर्ण जाडीमध्ये समान रंग आणि पॅटर्न,
+          ज्यामुळे स्क्रॅचेस किंवा चिप्स सहसा दिसत नाहीत.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           05 CERAMIC
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          05
+        </div>
+
+
+        <div class="tile-icon">
+          🧩
+        </div>
+
+
+        <h2>
+          Ceramic Wall & Floor Tiles
+        </h2>
+
+
+        <div class="tile-marathi">
+          सिरॅमिक वॉल आणि फ्लोअर टाईल्स
+        </div>
+
+
+        <p>
+          Cost-effective, lightweight tiles with vibrant
+          prints, widely used for kitchen backsplashes
+          and bathrooms.
+        </p>
+
+
+        <p class="marathi-description">
+          किचन बॅकस्प्लॅश आणि बाथरुमसाठी मोठ्या प्रमाणावर
+          वापरल्या जाणाऱ्या, आकर्षक प्रिंट्सच्या
+          किफायतशीर आणि हलक्या टाईल्स.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           06 PARKING & OUTDOOR
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          06
+        </div>
+
+
+        <div class="tile-icon">
+          🚗
+        </div>
+
+
+        <h2>
+          Parking & Outdoor Tiles
+        </h2>
+
+
+        <div class="tile-marathi">
+          पार्किंग आणि आऊटडोअर टाईल्स
+        </div>
+
+
+        <p>
+          Heavy, matte-finish, anti-skid tiles designed
+          to withstand heavy vehicle weight and outdoor
+          weather.
+        </p>
+
+
+        <p class="marathi-description">
+          वाहनांचे वजन आणि बाह्य हवामान सहन करण्यासाठी
+          डिझाइन केलेल्या हेवी, मॅट-फिनिश,
+          अँटी-स्किड टाईल्स.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           07 LARGE FORMAT
+      ================================================== -->
+
+      <div class="tile-card">
+
+
+        <div class="tile-number">
+          07
+        </div>
+
+
+        <div class="tile-icon">
+          ▫️
+        </div>
+
+
+        <h2>
+          Large Format Slab Tiles
+        </h2>
+
+
+        <div class="tile-marathi">
+          लार्ज फॉर्मेट स्लैब टाईल्स
+        </div>
+
+
+        <p>
+          Extra-large tiles such as 800x1600 mm or
+          1200x2400 mm that minimize grout lines for
+          a seamless luxury look.
+        </p>
+
+
+        <p class="marathi-description">
+          जोड कमी करून एकसंध लक्झरी लूक देण्यासाठी
+          अतिशय मोठ्या आकाराच्या टाईल्स
+          (उदा. ८००x१६०० मिमी किंवा १२००x२४०० मिमी).
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         CTA
+    ================================================== -->
+
+    <div class="tile-cta">
+
+
+      <h2>
+        Looking for Tiles?
+      </h2>
+
+
+      <p>
+        टाईल्सची आवश्यकता आहे?
+      </p>
+
+
+      <p>
+        Contact Vastu Developers for tile-related
+        requirements and information.
+      </p>
+
+
+      <p>
+        टाईल्सशी संबंधित गरजा आणि माहितीसाठी
+        वास्तु डेव्हलपर्सशी संपर्क साधा.
+      </p>
+
+
+      <div
+        class="buttons"
+        style="justify-content:center;">
+
+
+        <a
+          href="tel:+919623264545"
+          class="btn primary">
+
+          📞 Call Now
+
+        </a>
+
+
+        <a
+          href="https://wa.me/919623264545"
+          class="btn secondary"
+          target="_blank"
+          rel="noopener">
+
+          💬 WhatsApp
+
+        </a>
+
+
+        <a
+          href="../contact/"
+          class="btn secondary">
+
+          Contact Us →
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+  <div class="container footer-grid">
+
+
+    <div>
+
+
+      <img
+        src="../images/logo.PNG"
+        alt="Vastu Developers Logo"
+        style="
+          width:140px;
+          background:#fff;
+          padding:8px;
+          border-radius:8px;
+        ">
+
+
+      <p>
+        Quality Construction. Smart Designs.
+        Complete Building Solutions.
+      </p>
+
+
+      <p>
+        गुणवत्ता बांधकाम • आधुनिक डिझाइन •
+        संपूर्ण बांधकाम सेवा
+      </p>
+
+
+    </div>
+
+
+
+    <div>
+
+
+      <h3>
+        Quick Links
+      </h3>
+
+
+      <ul
+        style="
+          list-style:none;
+          padding:0;
+        ">
+
+
+        <li>
+          <a href="../index.html">
+            Home
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../about/">
+            About
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../services/">
+            Services
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../3d-exterior/">
+            3D Exterior
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../interior-design/">
+            Interior
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../tiles/">
+            Tiles
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../plumbing-materials/">
+            Plumbing
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../building-materials/">
+            Materials
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../projects/">
+            Projects
+          </a>
+        </li>
+
+
+        <li>
+          <a href="../contact/">
+            Contact
+          </a>
+        </li>
+
+
+      </ul>
+
+
+    </div>
+
+
+
+    <div>
+
+
+      <h3>
+        Contact
+      </h3>
+
+
+      <p>
+        📞
+        <a href="tel:+919623264545">
+          9623264545
+        </a>
+      </p>
+
+
+      <p>
+        ✉️
+        <a href="mailto:vastudevelopers45@gmail.com">
+          vastudevelopers45@gmail.com
+        </a>
+      </p>
+
+
+      <p>
+        📍 Tembhurni-Karmala Bypass,<br>
+        Post: Tembhurni, Taluka: Madha,<br>
+        District: Solapur – 413211
+      </p>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <div
+    class="container"
+    style="
+      margin-top:25px;
+      padding-top:18px;
+      border-top:1px solid #333;
+    ">
+
+    <p class="small">
+      © 2026 Vastu Developers. All Rights Reserved.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+</body>
+</html>
