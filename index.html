@@ -1,49 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vastu Developers | Civil Construction & Building Services</title>
 
   <meta name="description"
-        content="Vastu Developers - Civil construction, 3D building plans, RCC and steel design, interior design, renovation, waterproofing, plumbing, painting and building materials.">
+        content="Vastu Developers - Civil construction, 3D building plans, interior design, renovation, waterproofing, plumbing and building materials.">
 
   <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    /* ===============================
+       EXPLORE OUR WORK
+    =============================== */
+
+    .work-section {
+      background: #fff7f0;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .work-card {
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 16px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      transition: all 0.25s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      border-color: #f58220;
+    }
+
+    .work-icon {
+      font-size: 38px;
+      margin-bottom: 14px;
+    }
+
+    .work-card h3 {
+      margin: 0 0 5px;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .work-card .marathi {
+      color: #f58220;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .work-card p {
+      color: #666;
+      margin: 0 0 22px;
+    }
+
+    .view-btn {
+      display: inline-block;
+      margin-top: auto;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #f58220;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      border: 1px solid #f58220;
+      transition: 0.2s;
+    }
+
+    .view-btn:hover {
+      background: #ffffff;
+      color: #f58220;
+    }
+
+    .featured-service {
+      border: 2px solid #f58220;
+      background: linear-gradient(
+        180deg,
+        #fff,
+        #fff7f0
+      );
+    }
+
+
+    /* ===============================
+       CONTACT & LINKS
+    =============================== */
+
+    .home-contact {
+      background: #ffffff;
+    }
+
+    .contact-box {
+      background: #fff7f0;
+      border: 1px solid #eeeeee;
+      border-radius: 18px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      margin-top: 0;
+    }
+
+    .contact-box p {
+      color: #666;
+    }
+
+    .home-contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .home-link-btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 9px;
+      font-weight: 700;
+      border: 1px solid #f58220;
+      background: #ffffff;
+      color: #f58220;
+      transition: 0.2s;
+    }
+
+    .home-link-btn:hover {
+      background: #f58220;
+      color: #ffffff;
+    }
+
+    .home-link-btn.primary {
+      background: #f58220;
+      color: #ffffff;
+    }
+
+    .home-link-btn.primary:hover {
+      background: #ffffff;
+      color: #f58220;
+    }
+
+
+    /* ===============================
+       MOBILE
+    =============================== */
+
+    @media (max-width: 850px) {
+
+      .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-card {
+        min-height: auto;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =====================================================
+     HEADER / TOP NAVIGATION
+====================================================== -->
 
 <header>
+
   <div class="container nav">
 
+
     <a href="index.html">
-      <img src="images/logo.PNG"
-           alt="Vastu Developers Logo"
-           class="logo">
+
+      <img
+        src="images/logo.PNG"
+        alt="Vastu Developers Logo"
+        class="logo">
+
     </a>
 
+
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about/">About</a>
-      <a href="services/">Services</a>
-      <a href="3d-exterior/">3D Exterior</a>
-      <a href="interior-design/">Interior</a>
-      <a href="projects/">Projects</a>
-      <a href="contact/">Contact</a>
+
+      <a href="index.html" class="active">
+        Home
+      </a>
+
+      <a href="about/">
+        About
+      </a>
+
+      <a href="services/">
+        Services
+      </a>
+
+      <a href="3d-exterior/">
+        3D Exterior
+      </a>
+
+      <a href="interior-design/">
+        Interior
+      </a>
+
+      <a href="tiles/">
+        Tiles
+      </a>
+
+      <a href="plumbing-materials/">
+        Plumbing
+      </a>
+
+      <a href="building-materials/">
+        Materials
+      </a>
+
+      <a href="projects/">
+        Projects
+      </a>
+
+      <a href="contact/">
+        Contact
+      </a>
+
     </nav>
 
   </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+
+<!-- =====================================================
+     HERO
+====================================================== -->
 
 <section class="hero">
 
   <div class="container hero-grid">
+
 
     <div>
 
@@ -51,23 +273,39 @@
         Vastu <span>Developers</span>
       </h1>
 
-      <p>
-        Quality Construction. Smart Designs. Complete Building Solutions.
-      </p>
 
       <p>
-        गुणवत्ता बांधकाम • आधुनिक डिझाइन • संपूर्ण बांधकाम सेवा
+        Quality Construction. Smart Designs.
+        Complete Building Solutions.
       </p>
+
+
+      <p>
+        गुणवत्ता बांधकाम • आधुनिक डिझाइन •
+        संपूर्ण बांधकाम सेवा
+      </p>
+
 
       <div class="buttons">
 
-        <a href="services/" class="btn primary">
+
+        <a
+          href="services/"
+          class="btn primary">
+
           Explore Services
+
         </a>
 
-        <a href="contact/" class="btn secondary">
+
+        <a
+          href="contact/"
+          class="btn secondary">
+
           Contact Us
+
         </a>
+
 
       </div>
 
@@ -76,86 +314,18 @@
 
     <div>
 
-      <img src="images/hero.PNG"
-           alt="Vastu Developers Construction Project"
-           class="hero-image">
+      <img
+        src="images/hero.PNG"
+        alt="Vastu Developers Construction Project"
+        class="hero-image">
 
     </div>
+
 
   </div>
 
 </section>
 
-
-<!-- ================= ABOUT ================= -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <h2>About Vastu Developers | वास्तु डेव्हलपर्स</h2>
-
-      <p>
-        Professional construction and building solutions
-      </p>
-
-    </div>
-
-
-    <div class="content-grid">
-
-      <div>
-
-        <h3>
-          Building Your Vision
-        </h3>
-
-        <p>
-          Vastu Developers provides construction and building-related
-          services with a focus on quality, design and proper supervision.
-        </p>
-
-        <p>
-          वास्तु डेव्हलपर्सकडून बांधकाम आणि बांधकामाशी संबंधित
-          विविध सेवा गुणवत्तापूर्ण पद्धतीने दिल्या जातात.
-        </p>
-
-        <a href="about/" class="btn primary">
-          View About Us →
-        </a>
-
-      </div>
-
-
-      <div class="info-box">
-
-        <h3>
-          Kiran Gajanan Navale
-        </h3>
-
-        <p>
-          <strong>Civil Engineer</strong>
-        </p>
-
-        <p>
-          📞 9623264545
-        </p>
-
-        <p>
-          📍 Tembhurni-Karmala Bypass,<br>
-          Post: Tembhurni, Taluka: Madha,<br>
-          District: Solapur – 413211
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 
 
 <!-- =====================================================
@@ -166,6 +336,7 @@
 
   <div class="container">
 
+
     <div class="section-head">
 
       <h2>
@@ -173,16 +344,18 @@
       </h2>
 
       <p>
-        Explore our construction, design, materials and completed projects.
+        Explore our construction, design, materials
+        and completed projects.
       </p>
 
     </div>
 
 
+
     <div class="work-grid">
 
 
-      <!-- 01 - 3D EXTERIOR -->
+      <!-- 01 -->
 
       <div class="work-card">
 
@@ -199,17 +372,23 @@
         </div>
 
         <p>
-          Explore 3D elevation and exterior design projects.
+          Explore 3D elevation and exterior
+          design projects.
         </p>
 
-        <a href="3d-exterior/" class="view-btn">
+        <a
+          href="3d-exterior/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 02 - INTERIOR -->
+
+      <!-- 02 -->
 
       <div class="work-card">
 
@@ -226,17 +405,23 @@
         </div>
 
         <p>
-          View interior projects and future interior additions.
+          View interior projects and future
+          interior additions.
         </p>
 
-        <a href="interior-design/" class="view-btn">
+        <a
+          href="interior-design/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 03 - TILES -->
+
+      <!-- 03 -->
 
       <div class="work-card">
 
@@ -253,17 +438,23 @@
         </div>
 
         <p>
-          Dedicated space for tile products and information.
+          Dedicated space for tile products
+          and information.
         </p>
 
-        <a href="tiles/" class="view-btn">
+        <a
+          href="tiles/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 04 - PLUMBING MATERIALS -->
+
+      <!-- 04 -->
 
       <div class="work-card">
 
@@ -280,17 +471,23 @@
         </div>
 
         <p>
-          Plumbing products, specifications and information.
+          Plumbing products, specifications
+          and information.
         </p>
 
-        <a href="plumbing-materials/" class="view-btn">
+        <a
+          href="plumbing-materials/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 05 - BUILDING MATERIALS -->
+
+      <!-- 05 -->
 
       <div class="work-card">
 
@@ -307,18 +504,23 @@
         </div>
 
         <p>
-          Sand, cement, bricks and other construction
-          material information.
+          Sand, cement, bricks and other
+          construction material information.
         </p>
 
-        <a href="building-materials/" class="view-btn">
+        <a
+          href="building-materials/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 06 - COMPLETED PROJECTS -->
+
+      <!-- 06 -->
 
       <div class="work-card">
 
@@ -338,14 +540,19 @@
           View the existing projects.
         </p>
 
-        <a href="projects/" class="view-btn">
+        <a
+          href="projects/"
+          class="view-btn">
+
           View →
+
         </a>
 
       </div>
 
 
-      <!-- 07 - SERVICES -->
+
+      <!-- 07 -->
 
       <div class="work-card featured-service">
 
@@ -362,11 +569,16 @@
         </div>
 
         <p>
-          Construction and building-related services.
+          Construction and building-related
+          services.
         </p>
 
-        <a href="services/" class="view-btn">
+        <a
+          href="services/"
+          class="view-btn">
+
           View Services →
+
         </a>
 
       </div>
@@ -379,217 +591,273 @@
 </section>
 
 
-<!-- ================= SERVICES QUICK INTRO ================= -->
 
-<section>
+<!-- =====================================================
+     CONTACT & ALL LINKS
+====================================================== -->
 
-  <div class="container">
-
-    <div class="section-head">
-
-      <h2>
-        Construction & Building Solutions
-      </h2>
-
-      <p>
-        बांधकाम आणि बांधकामाशी संबंधित सेवा
-      </p>
-
-    </div>
-
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">🏠</div>
-        <h3>3D Building Plans</h3>
-        <p>
-          All types of 3D building plans and elevation designs.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🏗️</div>
-        <h3>Construction</h3>
-        <p>
-          Quality building construction with proper supervision.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🎨</div>
-        <h3>Interior & Renovation</h3>
-        <p>
-          Interior design, renovation and finishing solutions.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">💧</div>
-        <h3>Waterproofing & Plumbing</h3>
-        <p>
-          Waterproofing and plumbing-related services.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🧱</div>
-        <h3>Building Materials</h3>
-        <p>
-          Sand, bricks, cement and other construction materials.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🏦</div>
-        <h3>Bank Loan Assistance</h3>
-        <p>
-          Assistance for bank loans related to construction.
-        </p>
-      </div>
-
-    </div>
-
-
-    <div style="text-align:center; margin-top:30px;">
-
-      <a href="services/" class="btn primary">
-        View All Services →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= WHY CHOOSE US ================= -->
-
-<section>
+<section class="home-contact">
 
   <div class="container">
 
-    <div class="section-head">
+
+    <div class="contact-box">
+
 
       <h2>
-        Why Choose Vastu Developers?
+        Contact Vastu Developers
       </h2>
 
-      <p>
-        विश्वास, गुणवत्ता आणि योग्य नियोजन
-      </p>
-
-    </div>
-
-
-    <div class="cards">
-
-      <div class="card">
-
-        <div class="icon">
-          ⭐
-        </div>
-
-        <h3>
-          Quality Work
-        </h3>
-
-        <p>
-          Focus on quality construction and finishing.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          📐
-        </div>
-
-        <h3>
-          Professional Design
-        </h3>
-
-        <p>
-          Modern 3D plans, elevations and building designs.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          👷
-        </div>
-
-        <h3>
-          Proper Supervision
-        </h3>
-
-        <p>
-          Construction work with proper supervision and attention.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section>
-
-  <div class="container">
-
-    <div class="info-box" style="text-align:center;">
-
-      <h2>
-        Planning Your New Home?
-      </h2>
 
       <p>
-        Let's discuss your construction, design or renovation requirements.
-      </p>
-
-      <p>
-        आपल्या नवीन घराच्या बांधकामासाठी आमच्याशी संपर्क साधा.
+        For construction, design, materials,
+        renovation and other building requirements.
       </p>
 
 
-      <div class="buttons"
-           style="justify-content:center;">
+      <p>
+        बांधकाम, डिझाइन, साहित्य, नूतनीकरण
+        आणि इतर बांधकामाच्या गरजांसाठी संपर्क साधा.
+      </p>
 
-        <a href="tel:+919623264545"
-           class="btn primary">
-          📞 Call Now
+
+
+      <div class="home-contact-buttons">
+
+
+        <!-- CALL -->
+
+        <a
+          href="tel:+919623264545"
+          class="home-link-btn primary">
+
+          📞 Call
+
         </a>
 
-        <a href="https://wa.me/919623264545"
-           class="btn secondary"
-           target="_blank"
-           rel="noopener">
+
+
+        <!-- WHATSAPP -->
+
+        <a
+          href="https://wa.me/919623264545"
+          class="home-link-btn"
+          target="_blank"
+          rel="noopener">
+
           💬 WhatsApp
+
         </a>
 
-        <a href="contact/"
-           class="btn secondary">
-          Contact Us →
+
+
+        <!-- EMAIL -->
+
+        <a
+          href="mailto:vastudevelopers45@gmail.com"
+          class="home-link-btn">
+
+          ✉️ Email
+
         </a>
+
+
+
+        <!-- ABOUT -->
+
+        <a
+          href="about/"
+          class="home-link-btn">
+
+          About
+
+        </a>
+
+
+
+        <!-- SERVICES -->
+
+        <a
+          href="services/"
+          class="home-link-btn">
+
+          Services
+
+        </a>
+
+
+
+        <!-- 3D -->
+
+        <a
+          href="3d-exterior/"
+          class="home-link-btn">
+
+          🏠 3D Exterior
+
+        </a>
+
+
+
+        <!-- INTERIOR -->
+
+        <a
+          href="interior-design/"
+          class="home-link-btn">
+
+          🛋️ Interior
+
+        </a>
+
+
+
+        <!-- TILES -->
+
+        <a
+          href="tiles/"
+          class="home-link-btn">
+
+          ◻️ Tiles
+
+        </a>
+
+
+
+        <!-- PLUMBING -->
+
+        <a
+          href="plumbing-materials/"
+          class="home-link-btn">
+
+          🚿 Plumbing
+
+        </a>
+
+
+
+        <!-- MATERIALS -->
+
+        <a
+          href="building-materials/"
+          class="home-link-btn">
+
+          🧱 Materials
+
+        </a>
+
+
+
+        <!-- PROJECTS -->
+
+        <a
+          href="projects/"
+          class="home-link-btn">
+
+          📐 Projects
+
+        </a>
+
+
+
+        <!-- CONTACT -->
+
+        <a
+          href="contact/"
+          class="home-link-btn">
+
+          📍 Contact
+
+        </a>
+
+
+
+        <!-- FACEBOOK -->
+
+        <a
+          href="https://www.facebook.com/profile.php?id=100065166804311&mibextid=ZbWKwL"
+          class="home-link-btn"
+          target="_blank"
+          rel="noopener">
+
+          Facebook
+
+        </a>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+          href="https://instagram.com/vastudevelopers?igshid=YmMyMTA2M2Y="
+          class="home-link-btn"
+          target="_blank"
+          rel="noopener">
+
+          Instagram
+
+        </a>
+
+
+
+        <!-- YOUTUBE -->
+
+        <a
+          href="https://youtube.com/@VastuDevelopers"
+          class="home-link-btn"
+          target="_blank"
+          rel="noopener">
+
+          YouTube
+
+        </a>
+
+
+
+        <!-- GOOGLE MAPS -->
+
+        <a
+          href="https://maps.app.goo.gl/xk24V7vPSnW2RWH27?g_st=ic"
+          class="home-link-btn"
+          target="_blank"
+          rel="noopener">
+
+          📍 Google Maps
+
+        </a>
+
 
       </div>
+
+
+      <div style="margin-top:30px;">
+
+        <p>
+
+          <strong>
+            Kiran Gajanan Navale – Civil Engineer
+          </strong>
+
+        </p>
+
+
+        <p>
+          📞 9623264545
+        </p>
+
+
+        <p>
+          📍 Tembhurni-Karmala Bypass,<br>
+          Post: Tembhurni, Taluka: Madha,<br>
+          District: Solapur – 413211
+        </p>
+
+
+        <p>
+          ✉️ vastudevelopers45@gmail.com
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -598,7 +866,10 @@
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
 
 <footer>
 
@@ -607,20 +878,30 @@
 
     <div>
 
-      <img src="images/logo.PNG"
-           alt="Vastu Developers Logo"
-           style="width:140px; background:#fff; padding:8px; border-radius:8px;">
+      <img
+        src="images/logo.PNG"
+        alt="Vastu Developers Logo"
+        style="
+          width:140px;
+          background:#fff;
+          padding:8px;
+          border-radius:8px;
+        ">
+
 
       <p>
         Quality Construction. Smart Designs.
         Complete Building Solutions.
       </p>
 
+
       <p>
-        गुणवत्ता बांधकाम • आधुनिक डिझाइन • संपूर्ण बांधकाम सेवा
+        गुणवत्ता बांधकाम • आधुनिक डिझाइन •
+        संपूर्ण बांधकाम सेवा
       </p>
 
     </div>
+
 
 
     <div>
@@ -629,39 +910,88 @@
         Quick Links
       </h3>
 
-      <ul style="list-style:none; padding:0;">
+
+      <ul
+        style="
+          list-style:none;
+          padding:0;
+        ">
+
 
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html">
+            Home
+          </a>
         </li>
 
-        <li>
-          <a href="about/">About</a>
-        </li>
 
         <li>
-          <a href="services/">Services</a>
+          <a href="about/">
+            About
+          </a>
         </li>
 
-        <li>
-          <a href="3d-exterior/">3D Exterior</a>
-        </li>
 
         <li>
-          <a href="interior-design/">Interior</a>
+          <a href="services/">
+            Services
+          </a>
         </li>
 
-        <li>
-          <a href="projects/">Projects</a>
-        </li>
 
         <li>
-          <a href="contact/">Contact</a>
+          <a href="3d-exterior/">
+            3D Exterior
+          </a>
         </li>
+
+
+        <li>
+          <a href="interior-design/">
+            Interior
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tiles/">
+            Tiles
+          </a>
+        </li>
+
+
+        <li>
+          <a href="plumbing-materials/">
+            Plumbing
+          </a>
+        </li>
+
+
+        <li>
+          <a href="building-materials/">
+            Materials
+          </a>
+        </li>
+
+
+        <li>
+          <a href="projects/">
+            Projects
+          </a>
+        </li>
+
+
+        <li>
+          <a href="contact/">
+            Contact
+          </a>
+        </li>
+
 
       </ul>
 
     </div>
+
 
 
     <div>
@@ -670,6 +1000,7 @@
         Contact
       </h3>
 
+
       <p>
         📞
         <a href="tel:+919623264545">
@@ -677,12 +1008,14 @@
         </a>
       </p>
 
+
       <p>
         ✉️
         <a href="mailto:vastudevelopers45@gmail.com">
           vastudevelopers45@gmail.com
         </a>
       </p>
+
 
       <p>
         📍 Tembhurni-Karmala Bypass,<br>
@@ -696,8 +1029,14 @@
   </div>
 
 
-  <div class="container"
-       style="margin-top:25px; padding-top:18px; border-top:1px solid #333;">
+
+  <div
+    class="container"
+    style="
+      margin-top:25px;
+      padding-top:18px;
+      border-top:1px solid #333;
+    ">
 
     <p class="small">
       © 2026 Vastu Developers. All Rights Reserved.
@@ -707,108 +1046,6 @@
 
 </footer>
 
-
-<!-- ================= HOME PAGE EXTRA CSS ================= -->
-
-<style>
-
-.work-section {
-  background: #fff7f0;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.work-card {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-radius: 16px;
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
-  min-height: 310px;
-  transition: all 0.25s ease;
-}
-
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  border-color: #f58220;
-}
-
-.work-icon {
-  font-size: 38px;
-  margin-bottom: 14px;
-}
-
-.work-card h3 {
-  margin: 0 0 5px;
-  font-size: 21px;
-  line-height: 1.3;
-}
-
-.work-card .marathi {
-  color: #f58220;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.work-card p {
-  color: #666;
-  margin: 0 0 22px;
-}
-
-.view-btn {
-  display: inline-block;
-  margin-top: auto;
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: #f58220;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  border: 1px solid #f58220;
-  transition: 0.2s;
-}
-
-.view-btn:hover {
-  background: #ffffff;
-  color: #f58220;
-}
-
-.featured-service {
-  border: 2px solid #f58220;
-  background: linear-gradient(
-    180deg,
-    #fff,
-    #fff7f0
-  );
-}
-
-@media (max-width: 850px) {
-
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .work-card {
-    min-height: auto;
-  }
-
-}
-
-</style>
 
 </body>
 </html>
