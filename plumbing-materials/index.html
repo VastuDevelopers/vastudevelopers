@@ -1,29 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Plumbing Materials | Vastu Developers</title>
+  <title>Plumbing Material | Vastu Developers</title>
 
-  <meta
-    name="description"
-    content="Vastu Developers – Plumbing materials, bathroom fittings, sanitaryware, kitchen sinks, basins, closets, mixers, showers and plumbing products."
-  >
+  <meta name="description"
+        content="Plumbing material collection by Vastu Developers including bathroom fittings, sanitaryware, basins, closets, sinks, mixers and showers.">
 
   <link rel="stylesheet" href="../style.css">
 
   <style>
+    .plumbing-intro{
+      max-width:950px;
+      margin:0 auto 38px;
+      text-align:center;
+    }
 
-    /* =========================
-       PLUMBING PRODUCTS
-    ========================= */
+    .plumbing-intro p{
+      color:var(--muted);
+      font-size:18px;
+      margin:8px 0;
+    }
 
     .plumbing-gallery{
       display:grid;
       grid-template-columns:repeat(2,1fr);
-      gap:22px;
+      gap:24px;
       align-items:start;
     }
 
@@ -37,12 +41,10 @@
 
     /*
       IMPORTANT:
-      Images keep their original proportions.
-      No cropping.
-      No fixed height.
-      No object-fit.
+      Images are NOT cropped.
+      Original proportions are preserved.
+      No object-fit and no fixed image height.
     */
-
     .plumbing-product img{
       display:block;
       width:auto;
@@ -52,583 +54,517 @@
     }
 
     .plumbing-product figcaption{
-      padding:13px 15px;
+      padding:14px 16px;
       font-weight:700;
       border-top:1px solid var(--border);
+      text-align:center;
     }
 
-
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media(max-width:600px){
-
       .plumbing-gallery{
         grid-template-columns:1fr;
         gap:20px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
+<header>
+  <div class="container nav">
 
-  <!-- HEADER -->
+    <a href="../">
+      <img
+        src="../images/logo.PNG"
+        alt="Vastu Developers Logo"
+        class="logo">
+    </a>
 
-  <header>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../services/">Services</a>
+      <a href="../3d-exterior/">3D Exterior</a>
+      <a href="../interior-design/">Interior</a>
+      <a href="../tiles/">Tiles</a>
+      <a href="../plumbing-materials/" class="active">Plumbing</a>
+      <a href="../building-materials/">Materials</a>
+      <a href="../projects/">Projects</a>
+      <a href="../contact/">Contact</a>
+    </nav>
 
-    <div class="container nav">
+  </div>
+</header>
 
 
-      <!-- LOGO -->
+<main>
 
-      <a href="../index.html">
+  <!-- PAGE HERO -->
 
-        <img
-          class="logo"
-          src="../images/logo.PNG"
-          alt="Vastu Developers logo">
+  <section class="page-hero">
+    <div class="container">
 
+      <a href="../" class="back">
+        ← Back to Home
       </a>
 
+      <h1>Plumbing Material Collection</h1>
 
-      <!-- NAVIGATION -->
-
-      <nav>
-
-        <a href="../index.html">
-          Home
-        </a>
-
-        <a href="../services/">
-          Services
-        </a>
-
-        <a href="../3d-exterior/">
-          3D Exterior
-        </a>
-
-        <a href="../interior-design/">
-          Interior
-        </a>
-
-        <a href="../tiles/">
-          Tiles
-        </a>
-
-        <a class="active" href="index.html">
-          Plumbing
-        </a>
-
-        <a href="../building-materials/">
-          Materials
-        </a>
-
-        <a href="../projects/">
-          Projects
-        </a>
-
-        <a href="../contact/">
-          Contact
-        </a>
-
-      </nav>
+      <p>
+        Bathroom fittings, sanitaryware, basins, closets, sinks,
+        mixers, showers and other plumbing products.
+      </p>
 
     </div>
-
-  </header>
-
-
-  <!-- MAIN -->
-
-  <main>
+  </section>
 
 
-    <!-- PAGE HERO -->
+  <!-- INTRO -->
 
-    <section class="page-hero">
+  <section>
+    <div class="container">
 
-      <div class="container">
+      <div class="plumbing-intro">
+
+        <h2>
+          Plumbing Material Collection |
+          प्लंबिंग मटेरियल कलेक्शन
+        </h2>
+
+        <p>
+          Explore our range of bathroom fittings, sanitaryware,
+          basins, closets, sinks, mixers, showers and other
+          plumbing products.
+        </p>
+
+        <p>
+          बाथरूम फिटिंग्स, सॅनिटरीवेअर, बेसिन, क्लोसेट,
+          सिंक, मिक्सर, शॉवर आणि इतर प्लंबिंग उत्पादनांची
+          विविध श्रेणी.
+        </p>
+
+      </div>
+
+
+      <!-- PRODUCTS -->
+
+      <div class="plumbing-gallery">
+
+
+        <!-- 01 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/All%20Ceramic%20Collection%20by%20FURBO%20-1.jpg"
+            alt="All Ceramic Collection by FURBO">
+
+          <figcaption>
+            All Ceramic Collection by FURBO
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 02 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Bathroom%20Collection%20by%20Wellvit.jpg"
+            alt="Bathroom Collection by Wellvit">
+
+          <figcaption>
+            Bathroom Collection by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 03 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Closet%20Seat%20cover%20by%20Wellvit.jpg"
+            alt="Closet Seat Cover by Wellvit">
+
+          <figcaption>
+            Closet Seat Cover by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 04 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Closet%20by%20Wellvit.jpg"
+            alt="Closet by Wellvit">
+
+          <figcaption>
+            Closet by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 05 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Drainer%20by%20Wellvit.jpg"
+            alt="Drainer by Wellvit">
+
+          <figcaption>
+            Drainer by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 06 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/HAND%20CRAFTED%20KITCHEN%20SINK%20by%20FURBO%204.jpg"
+            alt="Hand Crafted Kitchen Sink by FURBO">
+
+          <figcaption>
+            Hand Crafted Kitchen Sink by FURBO
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 07 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Mixer%20and%20Cock%20Collection%20by%20Wellvit.jpg"
+            alt="Mixer and Cock Collection by Wellvit">
+
+          <figcaption>
+            Mixer and Cock Collection by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 08 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/One%20piece%20Basin%20by%20Wellvit.jpg"
+            alt="One Piece Basin by Wellvit">
+
+          <figcaption>
+            One Piece Basin by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 09 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/One%20pieces%20closet%20.jpg"
+            alt="One Piece Closet">
+
+          <figcaption>
+            One Piece Closet
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 10 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Pan%20collection%20by%20Wellvit.jpg"
+            alt="Pan Collection by Wellvit">
+
+          <figcaption>
+            Pan Collection by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 11 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Shower%20and%20Arm%20Collection%20by%20Wellvit.jpg"
+            alt="Shower and Arm Collection by Wellvit">
+
+          <figcaption>
+            Shower and Arm Collection by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 12 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Table%20Top%20Basin%20by%20Wellvit.jpg"
+            alt="Table Top Basin by Wellvit">
+
+          <figcaption>
+            Table Top Basin by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 13 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Table%20top%20Basin%20by%20Wellvit.jpg"
+            alt="Table Top Basin by Wellvit">
+
+          <figcaption>
+            Table Top Basin by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 14 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Table%20top%20basin%20.jpg"
+            alt="Table Top Basin">
+
+          <figcaption>
+            Table Top Basin
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 15 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/Urinal%20by%20Wellvit.jpg"
+            alt="Urinal by Wellvit">
+
+          <figcaption>
+            Urinal by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+        <!-- 16 -->
+
+        <figure class="plumbing-product">
+
+          <img
+            src="../images/plumbing-materials/WALL%20HANG%20CLOSET%20by%20Wellvit%20.jpg"
+            alt="Wall Hang Closet by Wellvit">
+
+          <figcaption>
+            Wall Hang Closet by Wellvit
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="notice">
+
+        <strong>
+          Looking for plumbing materials for your project?
+        </strong>
+
+        <br>
+
+        Contact Vastu Developers for product selection,
+        availability and project requirements.
+
+        <br><br>
+
+        <strong>
+          तुमच्या प्रोजेक्टसाठी प्लंबिंग साहित्य हवे आहे?
+        </strong>
+
+        <br>
+
+        उत्पादनांची निवड, उपलब्धता आणि प्रोजेक्टसाठी
+        आमच्याशी संपर्क करा.
+
+      </div>
+
+
+      <div class="buttons">
 
         <a
-          class="back"
-          href="../index.html">
-          ← Back to Home
+          class="btn primary"
+          href="tel:+919623264545">
+          📞 Call Now
         </a>
 
-        <h1>
-          Plumbing Materials
-        </h1>
+        <a
+          class="btn secondary"
+          href="https://wa.me/919623264545"
+          target="_blank">
+          💬 WhatsApp
+        </a>
 
-        <p>
-          Plumbing, bathroom and sanitaryware products for modern construction.
-        </p>
+        <a
+          class="btn secondary"
+          href="../contact/">
+          Contact Us
+        </a>
 
       </div>
 
-    </section>
+    </div>
 
+  </section>
 
-    <!-- INTRODUCTION -->
+</main>
 
-    <section>
 
-      <div class="container">
+<!-- FOOTER -->
 
-        <div class="section-head">
+<footer>
 
-          <h2>
-            Plumbing Material Collection
-          </h2>
+  <div class="container footer-grid">
 
-          <p>
-            Explore our range of bathroom fittings, sanitaryware,
-            basins, closets, sinks, mixers, showers and other plumbing products.
-          </p>
+    <div>
 
-        </div>
+      <h3>Vastu Developers</h3>
 
+      <p>
+        Kiran Gajanan Navale – Civil Engineer
+      </p>
 
-        <!-- PRODUCTS -->
-
-        <div class="plumbing-gallery">
-
-
-          <!-- 1 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="All%20Ceramic%20Collection%20by%20FURBO%20-1.jpg"
-              alt="All Ceramic Collection by FURBO">
-
-            <figcaption>
-              All Ceramic Collection by FURBO
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 2 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Bathroom%20Collection%20by%20Wellvit.jpg"
-              alt="Bathroom Collection by Wellvit">
-
-            <figcaption>
-              Bathroom Collection by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 3 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Closet%20Seat%20cover%20by%20Wellvit.jpg"
-              alt="Closet Seat Cover by Wellvit">
-
-            <figcaption>
-              Closet Seat Cover by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 4 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Closet%20by%20Wellvit.jpg"
-              alt="Closet by Wellvit">
-
-            <figcaption>
-              Closet by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 5 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Drainer%20by%20Wellvit.jpg"
-              alt="Drainer by Wellvit">
-
-            <figcaption>
-              Drainer by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 6 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="HAND%20CRAFTED%20KITCHEN%20SINK%20by%20FURBO%204.jpg"
-              alt="Hand Crafted Kitchen Sink by FURBO">
-
-            <figcaption>
-              Hand Crafted Kitchen Sink by FURBO
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 7 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Mixer%20and%20Cock%20Collection%20by%20Wellvit.jpg"
-              alt="Mixer and Cock Collection by Wellvit">
-
-            <figcaption>
-              Mixer and Cock Collection by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 8 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="One%20piece%20Basin%20by%20Wellvit.jpg"
-              alt="One Piece Basin by Wellvit">
-
-            <figcaption>
-              One Piece Basin by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 9 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="One%20pieces%20closet%20.jpg"
-              alt="One Piece Closet">
-
-            <figcaption>
-              One Piece Closet
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 10 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Pan%20collection%20by%20Wellvit.jpg"
-              alt="Pan Collection by Wellvit">
-
-            <figcaption>
-              Pan Collection by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 11 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Shower%20and%20Arm%20Collection%20by%20Wellvit.jpg"
-              alt="Shower and Arm Collection by Wellvit">
-
-            <figcaption>
-              Shower and Arm Collection by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 12 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Table%20Top%20Basin%20by%20Wellvit.jpg"
-              alt="Table Top Basin by Wellvit">
-
-            <figcaption>
-              Table Top Basin by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 13 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Table%20top%20Basin%20by%20Wellvit.jpg"
-              alt="Table Top Basin by Wellvit">
-
-            <figcaption>
-              Table Top Basin by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 14 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Table%20top%20basin%20.jpg"
-              alt="Table Top Basin">
-
-            <figcaption>
-              Table Top Basin
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 15 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="Urinal%20by%20Wellvit.jpg"
-              alt="Urinal by Wellvit">
-
-            <figcaption>
-              Urinal by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-          <!-- 16 -->
-
-          <figure class="plumbing-product">
-
-            <img
-              src="WALL%20HANG%20CLOSET%20by%20Wellvit%20.jpg"
-              alt="Wall Hang Closet by Wellvit">
-
-            <figcaption>
-              Wall Hang Closet by Wellvit
-            </figcaption>
-
-          </figure>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTACT CTA -->
-
-    <section style="background:var(--light);">
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <h2>
-            Need Plumbing Materials?
-          </h2>
-
-          <p>
-            Contact Vastu Developers for plumbing and sanitaryware requirements.
-          </p>
-
-        </div>
-
-
-        <div
-          class="buttons"
-          style="justify-content:center;">
-
-          <a
-            class="btn primary"
-            href="tel:9623264545">
-            Call 9623264545
-          </a>
-
-          <a
-            class="btn secondary"
-            href="https://wa.me/919623264545"
-            target="_blank"
-            rel="noopener">
-            WhatsApp
-          </a>
-
-          <a
-            class="btn secondary"
-            href="../contact/">
-            Contact Us
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container footer-grid">
-
-
-      <!-- COMPANY -->
-
-      <div>
-
-        <img
-          class="logo"
-          src="../images/logo.PNG"
-          alt="Vastu Developers"
-          style="background:#fff;padding:6px;border-radius:6px;">
-
-        <p>
-          Kiran Gajanan Navale – Civil Engineer
-        </p>
-
-        <p>
-          Design • Plan • Build
-        </p>
-
-      </div>
-
-
-      <!-- QUICK LINKS -->
-
-      <div>
-
-        <h3>
-          Quick Links
-        </h3>
-
-        <p>
-          <a href="../services/">
-            Services
-          </a>
-        </p>
-
-        <p>
-          <a href="../3d-exterior/">
-            3D Exterior
-          </a>
-        </p>
-
-        <p>
-          <a href="../interior-design/">
-            Interior Design
-          </a>
-        </p>
-
-        <p>
-          <a href="../tiles/">
-            Tiles
-          </a>
-        </p>
-
-        <p>
-          <a href="index.html">
-            Plumbing Materials
-          </a>
-        </p>
-
-        <p>
-          <a href="../building-materials/">
-            Building Materials
-          </a>
-        </p>
-
-        <p>
-          <a href="../projects/">
-            Projects
-          </a>
-        </p>
-
-        <p>
-          <a href="../contact/">
-            Contact
-          </a>
-        </p>
-
-      </div>
-
-
-      <!-- CONTACT -->
-
-      <div>
-
-        <h3>
-          Contact
-        </h3>
-
-        <p>
-          <a href="tel:9623264545">
-            9623264545
-          </a>
-        </p>
-
-        <p>
-          <a href="mailto:vastudevelopers45@gmail.com">
-            vastudevelopers45@gmail.com
-          </a>
-        </p>
-
-        <p>
-          Tembhurni-Karmala Bypass,<br>
-          Post: Tembhurni, Taluka: Madha,<br>
-          District: Solapur – 413211
-        </p>
-
-      </div>
-
+      <p>
+        Professional construction, building,
+        interior, material supply and related services.
+      </p>
 
     </div>
 
 
-    <div
-      class="container small"
-      style="margin-top:25px;">
+    <div>
 
-      © 2026 Vastu Developers. All rights reserved.
+      <h3>Quick Links</h3>
+
+      <ul class="list">
+
+        <li>
+          <a href="../">Home</a>
+        </li>
+
+        <li>
+          <a href="../services/">Services</a>
+        </li>
+
+        <li>
+          <a href="../3d-exterior/">3D Exterior</a>
+        </li>
+
+        <li>
+          <a href="../interior-design/">Interior</a>
+        </li>
+
+        <li>
+          <a href="../tiles/">Tiles</a>
+        </li>
+
+        <li>
+          <a href="../plumbing-materials/">Plumbing</a>
+        </li>
+
+        <li>
+          <a href="../building-materials/">Materials</a>
+        </li>
+
+        <li>
+          <a href="../projects/">Projects</a>
+        </li>
+
+        <li>
+          <a href="../contact/">Contact</a>
+        </li>
+
+      </ul>
 
     </div>
 
-  </footer>
 
+    <div>
+
+      <h3>Contact</h3>
+
+      <p>
+        📞
+        <a href="tel:+919623264545">
+          9623264545
+        </a>
+      </p>
+
+      <p>
+        ✉️
+        <a href="mailto:vastudevelopers45@gmail.com">
+          vastudevelopers45@gmail.com
+        </a>
+      </p>
+
+      <p>
+        📍 Tembhurni-Karmala Bypass,<br>
+        Post: Tembhurni, Taluka: Madha,<br>
+        District: Solapur – 413211
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+    <p class="small">
+      © 2026 Vastu Developers. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
