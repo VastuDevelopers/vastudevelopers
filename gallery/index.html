@@ -1,500 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Vastu Developers</title>
-
-  <meta
-    name="description"
-    content="Vastu Developers Gallery – Construction projects, office, site work and special moments."
-  >
-
+  <meta name="description" content="View the gallery of Vastu Developers, including construction site activities, office photos and achievements.">
   <link rel="stylesheet" href="../style.css">
-
   <style>
-
-    /* =========================
-       GALLERY PAGE
-    ========================= */
-
-    .gallery-page{
-      padding:55px 0;
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      align-items: start;
     }
-
-    .gallery-intro{
-      text-align:center;
-      max-width:750px;
-      margin:0 auto 35px;
+    .gallery-item {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
     }
-
-    .gallery-intro h2{
-      margin:0 0 10px;
-      font-size:32px;
+    /* Preserve original image proportions; no cropping */
+    .gallery-item img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      margin: auto;
     }
-
-    .gallery-intro p{
-      margin:0;
-      color:var(--muted);
+    .gallery-item figcaption {
+      padding: 14px 16px;
+      font-weight: 700;
+      border-top: 1px solid var(--border);
     }
-
-
-    /* Keep original image proportions */
-    .gallery-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:24px;
-      align-items:start;
-    }
-
-    .gallery-item{
-      margin:0;
-      border:1px solid var(--border);
-      border-radius:14px;
-      overflow:hidden;
-      background:#fff;
-    }
-
-    .gallery-item img{
-      display:block;
-      width:auto;
-      height:auto;
-      max-width:100%;
-      margin:auto;
-    }
-
-    .gallery-item figcaption{
-      padding:14px 16px;
-      font-weight:700;
-      border-top:1px solid var(--border);
-    }
-
-
-    /* Tablet */
-    @media(max-width:850px){
-
-      .gallery-grid{
-        grid-template-columns:1fr 1fr;
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
-
     }
-
-
-    /* Mobile */
-    @media(max-width:600px){
-
-      .gallery-page{
-        padding:42px 0;
-      }
-
-      .gallery-intro h2{
-        font-size:28px;
-      }
-
-      .gallery-grid{
-        grid-template-columns:1fr;
-        gap:20px;
-      }
-
-    }
-
   </style>
-
 </head>
-
-
 <body>
-
-
-  <!-- HEADER -->
-  <header>
-
-    <div class="container nav">
-
-      <a href="../index.html">
-
-        <img
-          class="logo"
-          src="../images/logo.PNG"
-          alt="Vastu Developers logo">
-
-      </a>
-
-
-      <!-- TOP NAVIGATION -->
-
-      <nav>
-
-        <a href="../index.html">
-          Home
-        </a>
-
-        <a href="../services/">
-          Services
-        </a>
-
-        <a href="../3d-exterior/">
-          3D Exterior
-        </a>
-
-        <a href="../interior-design/">
-          Interior
-        </a>
-
-        <a href="../tiles/">
-          Tiles
-        </a>
-
-        <a href="../plumbing-materials/">
-          Plumbing
-        </a>
-
-        <a href="../building-materials/">
-          Materials
-        </a>
-
-        <a href="../projects/">
-          Projects
-        </a>
-
-        <a href="../contact/">
-          Contact
-        </a>
-
-      </nav>
-
+<header>
+  <div class="container nav">
+    <a href="../">
+      <img src="../images/logo.PNG"
+           alt="Vastu Developers Logo"
+           class="logo">
+    </a>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../services/">Services</a>
+      <a href="../3d-exterior/">3D Exterior</a>
+      <a href="../interior-design/">Interior</a>
+      <a href="../tiles/">Tiles</a>
+      <a href="../plumbing-materials/">Plumbing</a>
+      <a href="../building-materials/">Materials</a>
+      <a href="../projects/">Projects</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <!-- Gallery heading -->
+  <section class="page-hero">
+    <div class="container">
+      <a href="../" class="back">← Back to Home</a>
+      <h1>Our Gallery</h1>
+      <p>Glimpses of Vastu Developers' work, activities and achievements.</p>
     </div>
-
-  </header>
-
-
-  <!-- MAIN -->
-
-  <main>
-
-
-    <!-- PAGE HERO -->
-
-    <section class="page-hero">
-
-      <div class="container">
-
-        <a
-          class="back"
-          href="../index.html">
-          ← Back to Home
-        </a>
-
-        <h1>
-          Gallery
-        </h1>
-
-        <p>
-          Vastu Developers – Our work, projects and special moments.
-        </p>
-
+  </section>
+  <!-- Gallery images -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery | फोटो गॅलरी</h2>
+        <p>Moments from Vastu Developers</p>
       </div>
-
-    </section>
-
-
-    <!-- GALLERY -->
-
-    <section class="gallery-page">
-
-      <div class="container">
-
-
-        <div class="gallery-intro">
-
-          <h2>
-            Our Gallery
-          </h2>
-
-          <p>
-            Explore photographs from Vastu Developers,
-            including office, site work and special events.
-          </p>
-
-        </div>
-
-
-        <div class="gallery-grid">
-
-
-          <!-- IMAGE 1 -->
-
-          <figure class="gallery-item">
-
-            <img
-              src="Calendar%20inauguration%201.JPEG"
-              alt="Calendar inauguration 1">
-
-            <figcaption>
-              Calendar Inauguration
-            </figcaption>
-
-          </figure>
-
-
-          <!-- IMAGE 2 -->
-
-          <figure class="gallery-item">
-
-            <img
-              src="Calendar%20inauguration%202.JPEG"
-              alt="Calendar inauguration 2">
-
-            <figcaption>
-              Calendar Inauguration
-            </figcaption>
-
-          </figure>
-
-
-          <!-- IMAGE 3 -->
-
-          <figure class="gallery-item">
-
-            <img
-              src="Icon%20Steel%20Appreciated%20.JPG"
-              alt="Icon Steel Appreciated">
-
-            <figcaption>
-              Icon Steel Appreciated
-            </figcaption>
-
-          </figure>
-
-
-          <!-- IMAGE 4 -->
-
-          <figure class="gallery-item">
-
-            <img
-              src="Office%20photo%20.jpg"
-              alt="Vastu Developers office">
-
-            <figcaption>
-              Vastu Developers Office
-            </figcaption>
-
-          </figure>
-
-
-          <!-- IMAGE 5 -->
-
-          <figure class="gallery-item">
-
-            <img
-              src="Site%20started%20.JPEG"
-              alt="Vastu Developers site started">
-
-            <figcaption>
-              Site Started
-            </figcaption>
-
-          </figure>
-
-
-        </div>
-
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img
+            src="Icon%20Steel%20Appreciated%20.JPG"
+            alt="Vastu Developers - Icon Steel Appreciation"
+            loading="lazy">
+          <figcaption>Icon Steel Appreciation</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="Office%20photo%20.jpg"
+            alt="Vastu Developers Office"
+            loading="lazy">
+          <figcaption>Our Office</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="Site%20started%20.JPEG"
+            alt="Vastu Developers Construction Site Started"
+            loading="lazy">
+          <figcaption>Construction Site Started</figcaption>
+        </figure>
       </div>
-
-    </section>
-
-
-    <!-- CONTACT CTA -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <h2>
-            Start Your Project With Us
-          </h2>
-
-          <p>
-            Contact Vastu Developers for construction,
-            planning and design requirements.
-          </p>
-
-        </div>
-
-
-        <div
-          class="buttons"
-          style="justify-content:center;">
-
-          <a
-            class="btn primary"
-            href="tel:9623264545">
-            Call 9623264545
-          </a>
-
-          <a
-            class="btn secondary"
-            href="https://wa.me/919623264545"
-            target="_blank"
-            rel="noopener">
-            WhatsApp
-          </a>
-
-          <a
-            class="btn secondary"
-            href="../contact/">
-            Contact Us
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container footer-grid">
-
-
-      <!-- COMPANY -->
-
-      <div>
-
-        <img
-          class="logo"
-          src="../images/logo.PNG"
-          alt="Vastu Developers"
-          style="background:#fff;padding:6px;border-radius:6px;">
-
-        <p>
-          Kiran Gajanan Navale – Civil Engineer
-        </p>
-
-        <p>
-          Design • Plan • Build
-        </p>
-
-      </div>
-
-
-      <!-- QUICK LINKS -->
-
-      <div>
-
-        <h3>
-          Quick Links
-        </h3>
-
-        <p>
-          <a href="../services/">
-            Services
-          </a>
-        </p>
-
-        <p>
-          <a href="../3d-exterior/">
-            3D Exterior
-          </a>
-        </p>
-
-        <p>
-          <a href="../interior-design/">
-            Interior Design
-          </a>
-        </p>
-
-        <p>
-          <a href="../tiles/">
-            Tiles
-          </a>
-        </p>
-
-        <p>
-          <a href="../plumbing-materials/">
-            Plumbing Materials
-          </a>
-        </p>
-
-        <p>
-          <a href="../building-materials/">
-            Building Materials
-          </a>
-        </p>
-
-        <p>
-          <a href="../projects/">
-            Projects
-          </a>
-        </p>
-
-        <p>
-          <a href="../contact/">
-            Contact
-          </a>
-        </p>
-
-        <p>
-          <a href="index.html">
-            Gallery
-          </a>
-        </p>
-
-      </div>
-
-
-      <!-- CONTACT -->
-
-      <div>
-
-        <h3>
-          Contact
-        </h3>
-
-        <p>
-          <a href="tel:9623264545">
-            9623264545
-          </a>
-        </p>
-
-        <p>
-          <a href="mailto:vastudevelopers45@gmail.com">
-            vastudevelopers45@gmail.com
-          </a>
-        </p>
-
-        <p>
-          Tembhurni-Karmala Bypass,<br>
-          Post: Tembhurni, Taluka: Madha,<br>
-          District: Solapur – 413211
-        </p>
-
-      </div>
-
-
     </div>
-
-
-    <div
-      class="container small"
-      style="margin-top:25px;">
-
-      © 2026 Vastu Developers. All rights reserved.
-
+  </section>
+  <!-- Contact section -->
+  <section>
+    <div class="container">
+      <div class="notice">
+        <strong>Planning your dream home?</strong><br>
+        Contact Vastu Developers for construction, 3D building plans,
+        interior design and building materials.
+        <br><br>
+        <strong>तुमच्या स्वप्नातील घर बांधायचे आहे?</strong><br>
+        बांधकाम, 3D बिल्डिंग प्लॅन, इंटिरियर डिझाइन आणि बांधकाम
+        साहित्याकरिता वास्तु डेव्हलपर्सशी संपर्क साधा.
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="tel:+919623264545">📞 Call Now</a>
+        <a class="btn secondary"
+           href="https://wa.me/919623264545"
+           target="_blank"
+           rel="noopener noreferrer">💬 WhatsApp</a>
+        <a class="btn secondary" href="../contact/">Contact Us</a>
+      </div>
     </div>
-
-  </footer>
-
-
+  </section>
+</main>
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Vastu Developers</h3>
+      <p>Kiran Gajanan Navale – Civil Engineer</p>
+      <p>Professional construction, building, interior design and material supply services.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul class="list">
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../3d-exterior/">3D Exterior</a></li>
+        <li><a href="../interior-design/">Interior</a></li>
+        <li><a href="../tiles/">Tiles</a></li>
+        <li><a href="../plumbing-materials/">Plumbing</a></li>
+        <li><a href="../building-materials/">Materials</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>
+        📞 <a href="tel:+919623264545">9623264545</a>
+      </p>
+      <p>
+        ✉️ <a href="mailto:vastudevelopers45@gmail.com">vastudevelopers45@gmail.com</a>
+      </p>
+      <p>
+        📍 Tembhurni-Karmala Bypass,<br>
+        Post Tembhurni, Taluka Madha,<br>
+        District Solapur – 413211
+      </p>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100065166804311"
+           target="_blank"
+           rel="noopener noreferrer">Facebook</a>
+        <a href="https://instagram.com/vastudevelopers"
+           target="_blank"
+           rel="noopener noreferrer">Instagram</a>
+        <a href="https://youtube.com/@VastuDevelopers"
+           target="_blank"
+           rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="small">© 2026 Vastu Developers. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
