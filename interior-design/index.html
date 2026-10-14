@@ -1,368 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interior Design | Vastu Developers</title>
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
-}
-.header {
-  text-align: center;
-  padding: 35px 15px 25px;
-}
-.logo {
-  width: 85px;
-  height: auto;
-  margin-bottom: 15px;
-}
-h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-.subtitle {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.back {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 10px 18px;
-  background: #222;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 14px;
-}
-/* Gallery */
-.gallery {
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto 60px;
-  padding: 0 15px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.photo {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.10);
-}
-.photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  cursor: pointer;
-}
-.photo-title {
-  text-align: center;
-  padding: 12px 8px;
-  font-size: 15px;
-  font-weight: 600;
-}
-/* Full screen image */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background: rgba(0,0,0,0.94);
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.lightbox img {
-  max-width: 96%;
-  max-height: 92vh;
-  width: auto;
-  height: auto;
-}
-.close {
-  position: absolute;
-  top: 10px;
-  right: 22px;
-  color: #fff;
-  font-size: 42px;
-  cursor: pointer;
-}
-/* Footer */
-footer {
-  border-top: 1px solid #eee;
-  text-align: center;
-  padding: 25px 15px;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.7;
-}
-/* Tablet */
-@media (max-width: 900px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Mobile */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 27px;
-  }
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .photo-title {
-    font-size: 14px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interior Design | Vastu Developers</title>
+  <meta name="description" content="Explore interior design plans for halls, bedrooms, kitchens and temples by Vastu Developers.">
+
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .interior-intro {
+      max-width: 900px;
+      margin: 0 auto 35px;
+      text-align: center;
+    }
+
+    .interior-intro p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .interior-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .interior-item {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    /* Preserve original image dimensions and proportions.
+       No cropping, no fixed height, no object-fit. */
+    .interior-item img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .interior-item figcaption {
+      padding: 14px 16px;
+      font-weight: 700;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .interior-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<!-- HEADER -->
-<header class="header">
 
-<img
-src=”../images/logo.PNG”
-alt=“Vastu Developers Logo”
-class=“logo”
+<header>
+  <div class="container nav">
+    <a href="../">
+      <img src="../images/logo.PNG"
+           alt="Vastu Developers Logo"
+           class="logo">
+    </a>
 
-  <h1>Interior Design</h1>
-  <p class="subtitle">
-    Explore our Interior Design Plans
-  </p>
-  <a href="../index.html" class="back">
-    ← Back to Home
-  </a>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../services/">Services</a>
+      <a href="../3d-exterior/">3D Exterior</a>
+      <a href="../interior-design/" class="active">Interior</a>
+      <a href="../tiles/">Tiles</a>
+      <a href="../plumbing-materials/">Plumbing</a>
+      <a href="../building-materials/">Materials</a>
+      <a href="../projects/">Projects</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </div>
 </header>
-<!-- ALL 20 PHOTOS ON ONE PAGE -->
-<main class="gallery">
-  <!-- 1 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%201%20(Hall).JPG"
-      alt="Interior Design Plan 1 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 1</div>
-  </div>
-  <!-- 2 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%202%20(Hall).JPG"
-      alt="Interior Design Plan 2 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 2</div>
-  </div>
-  <!-- 3 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%203%20(Hall).JPG"
-      alt="Interior Design Plan 3 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 3</div>
-  </div>
-  <!-- 4 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%204%20(Hall).JPG"
-      alt="Interior Design Plan 4 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 4</div>
-  </div>
-  <!-- 5 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%205%20(Hall).JPG"
-      alt="Interior Design Plan 5 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 5</div>
-  </div>
-  <!-- 6 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%206%20(Hall).JPG"
-      alt="Interior Design Plan 6 - Hall"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall Interior Design 6</div>
-  </div>
-  <!-- 7 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%207%20(Bedroom).JPG"
-      alt="Interior Design Plan 7 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 1</div>
-  </div>
-  <!-- 8 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%208%20(Bedroom).JPG"
-      alt="Interior Design Plan 8 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 2</div>
-  </div>
-  <!-- 9 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%209%20(Bedroom).JPG"
-      alt="Interior Design Plan 9 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 3</div>
-  </div>
-  <!-- 10 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2010%20(Bedroom).JPG"
-      alt="Interior Design Plan 10 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 4</div>
-  </div>
-  <!-- 11 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2011%20(Bedroom).JPG"
-      alt="Interior Design Plan 11 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 5</div>
-  </div>
-  <!-- 12 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2012%20(Bedroom).JPG"
-      alt="Interior Design Plan 12 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 6</div>
-  </div>
-  <!-- 13 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2013%20(Bedroom).JPG"
-      alt="Interior Design Plan 13 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 7</div>
-  </div>
-  <!-- 14 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2014%20(Bedroom).JPG"
-      alt="Interior Design Plan 14 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 8</div>
-  </div>
-  <!-- 15 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2015%20(Bedroom).JPG"
-      alt="Interior Design Plan 15 - Bedroom"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Bedroom Interior Design 9</div>
-  </div>
-  <!-- 16 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2016%20(Kitchen%20).JPG"
-      alt="Interior Design Plan 16 - Kitchen"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Kitchen Interior Design 1</div>
-  </div>
-  <!-- 17 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2017%20(Kitchen%20).JPG"
-      alt="Interior Design Plan 17 - Kitchen"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Kitchen Interior Design 2</div>
-  </div>
-  <!-- 18 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2018%20(Kitchen%20).JPG"
-      alt="Interior Design Plan 18 - Kitchen"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Kitchen Interior Design 3</div>
-  </div>
-  <!-- 19 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2019%20(Hall%26Temple%20).JPG"
-      alt="Interior Design Plan 19 - Hall and Temple"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Hall & Temple Interior Design</div>
-  </div>
-  <!-- 20 -->
-  <div class="photo">
-    <img
-      src="../images/interior-design/Interior%20Design%20Plan%20-%2020%20(Temple%20).JPG"
-      alt="Interior Design Plan 20 - Temple"
-      onclick="openImage(this.src)"
-    >
-    <div class="photo-title">Temple Interior Design</div>
-  </div>
+
+<main>
+
+  <!-- Page heading -->
+  <section class="page-hero">
+    <div class="container">
+      <a href="../" class="back">← Back to Home</a>
+      <h1>Interior Design Plans</h1>
+      <p>Beautiful interior ideas for every corner of your home.</p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section>
+    <div class="container">
+
+      <div class="interior-intro">
+        <h2>Interior Design Gallery | इंटिरियर डिझाइन</h2>
+
+        <p>
+          Explore our interior design collection for living halls,
+          bedrooms, kitchens and home temples. Get inspiration for
+          elegant, functional and comfortable spaces.
+        </p>
+
+        <p>
+          हॉल, बेडरूम, किचन आणि देवघरासाठी इंटिरियर डिझाइनची
+          विविध उदाहरणे पाहा. सुंदर, उपयोगी आणि आरामदायी
+          घरासाठी योग्य डिझाइन निवडा.
+        </p>
+      </div>
+
+      <div class="interior-gallery">
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%201%20(Hall).JPG"
+               alt="Interior Design Plan 1 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 01 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%202%20(Hall).JPG"
+               alt="Interior Design Plan 2 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 02 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%203%20(Hall).JPG"
+               alt="Interior Design Plan 3 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 03 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%204%20(Hall).JPG"
+               alt="Interior Design Plan 4 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 04 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%205%20(Hall).JPG"
+               alt="Interior Design Plan 5 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 05 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%206%20(Hall).JPG"
+               alt="Interior Design Plan 6 - Hall" loading="lazy">
+          <figcaption>Interior Design Plan No. 06 – Hall</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%207%20(Bedroom).JPG"
+               alt="Interior Design Plan 7 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 07 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%208%20(Bedroom).JPG"
+               alt="Interior Design Plan 8 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 08 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%209%20(Bedroom).JPG"
+               alt="Interior Design Plan 9 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 09 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2010%20(Bedroom).JPG"
+               alt="Interior Design Plan 10 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 10 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2011%20(Bedroom).JPG"
+               alt="Interior Design Plan 11 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 11 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2012%20(Bedroom).JPG"
+               alt="Interior Design Plan 12 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 12 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2013%20(Bedroom).JPG"
+               alt="Interior Design Plan 13 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 13 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2014%20(Bedroom).JPG"
+               alt="Interior Design Plan 14 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 14 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2015%20(Bedroom).JPG"
+               alt="Interior Design Plan 15 - Bedroom" loading="lazy">
+          <figcaption>Interior Design Plan No. 15 – Bedroom</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2016%20(Kitchen%20).JPG"
+               alt="Interior Design Plan 16 - Kitchen" loading="lazy">
+          <figcaption>Interior Design Plan No. 16 – Kitchen</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2017%20(Kitchen%20).JPG"
+               alt="Interior Design Plan 17 - Kitchen" loading="lazy">
+          <figcaption>Interior Design Plan No. 17 – Kitchen</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2018%20(Kitchen%20).JPG"
+               alt="Interior Design Plan 18 - Kitchen" loading="lazy">
+          <figcaption>Interior Design Plan No. 18 – Kitchen</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2019%20(Hall%26Temple%20).JPG"
+               alt="Interior Design Plan 19 - Hall and Temple" loading="lazy">
+          <figcaption>Interior Design Plan No. 19 – Hall &amp; Temple</figcaption>
+        </figure>
+
+        <figure class="interior-item">
+          <img src="../images/interior-design/Interior%20Design%20Plan%20-%2020%20(Temple%20).JPG"
+               alt="Interior Design Plan 20 - Temple" loading="lazy">
+          <figcaption>Interior Design Plan No. 20 – Temple</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact call to action -->
+  <section>
+    <div class="container">
+
+      <div class="notice">
+        <strong>Planning your home interiors?</strong><br>
+        Contact Vastu Developers for interior design and home
+        construction solutions.
+        <br><br>
+        <strong>घराचे इंटिरियर करण्याचा विचार करत आहात?</strong><br>
+        इंटिरियर डिझाइन आणि घर बांधकामासाठी वास्तु डेव्हलपर्सशी संपर्क करा.
+      </div>
+
+      <div class="buttons">
+        <a class="btn primary" href="tel:+919623264545">📞 Call Now</a>
+
+        <a class="btn secondary"
+           href="https://wa.me/919623264545"
+           target="_blank"
+           rel="noopener noreferrer">💬 WhatsApp</a>
+
+        <a class="btn secondary" href="../contact/">Contact Us</a>
+      </div>
+
+    </div>
+  </section>
+
 </main>
-<!-- FOOTER -->
+
 <footer>
+  <div class="container footer-grid">
 
-Vastu Developers
+    <div>
+      <h3>Vastu Developers</h3>
+      <p>Kiran Gajanan Navale – Civil Engineer</p>
+      <p>Professional construction, building, interior design and material supply services.</p>
+    </div>
 
-Kiran Gajanan Navale – Civil Engineer
+    <div>
+      <h3>Quick Links</h3>
+      <ul class="list">
+        <li><a href="../">Home</a></li>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../3d-exterior/">3D Exterior</a></li>
+        <li><a href="../interior-design/">Interior</a></li>
+        <li><a href="../tiles/">Tiles</a></li>
+        <li><a href="../plumbing-materials/">Plumbing</a></li>
+        <li><a href="../building-materials/">Materials</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </div>
 
-📞 9623264545
+    <div>
+      <h3>Contact Us</h3>
 
-Tembhurni–Karmala Bypass,
-Post Tembhurni, Taluka Madha,
-District Solapur – 413211
+      <p>
+        📞 <a href="tel:+919623264545">9623264545</a>
+      </p>
 
+      <p>
+        ✉️ <a href="mailto:vastudevelopers45@gmail.com">vastudevelopers45@gmail.com</a>
+      </p>
+
+      <p>
+        📍 Tembhurni-Karmala Bypass,<br>
+        Post Tembhurni, Taluka Madha,<br>
+        District Solapur – 413211
+      </p>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100065166804311"
+           target="_blank" rel="noopener noreferrer">Facebook</a>
+
+        <a href="https://instagram.com/vastudevelopers"
+           target="_blank" rel="noopener noreferrer">Instagram</a>
+
+        <a href="https://youtube.com/@VastuDevelopers"
+           target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <p class="small">© 2026 Vastu Developers. All Rights Reserved.</p>
+  </div>
 </footer>
-<!-- IMAGE VIEWER -->
-<div
-  class="lightbox"
-  id="lightbox"
-  onclick="closeImage()"
->
 
-×
-
-<img
-id=“lightboxImage”
-src=””
-alt=“Interior Design”
-
-</div>
-<script>
-function openImage(src) {
-  document.getElementById("lightboxImage").src = src;
-  document.getElementById("lightbox").style.display = "flex";
-}
-function closeImage() {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
 </body>
 </html>
